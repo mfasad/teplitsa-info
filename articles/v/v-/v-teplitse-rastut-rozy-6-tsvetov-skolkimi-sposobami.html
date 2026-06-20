@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Сколькими способами можно выбрать 6 роз из теплицы: математика и логика — Теплица Инфо</title>
+    <meta name="description" content="Разбор комбинаторной задачи про выбор 6 цветов роз из теплицы. Узнайте, сколькими способами можно составить букет с учетом и без учета порядка цветов.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/v/v-/v-teplitse-rastut-rozy-6-tsvetov-skolkimi-sposobami.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Сколькими способами можно выбрать 6 роз из теплицы: математика и логика">
+    <meta property="og:description" content="Разбор комбинаторной задачи про выбор 6 цветов роз из теплицы. Узнайте, сколькими способами можно составить букет с учетом и без учета порядка цветов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/sorta-i-vybor-rastenij/">Сорта и выбор растений</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Сколькими способами можно выбрать 6 роз из теплицы: математика и логика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основы-комбинаторики-при-выборе-цветов">Основы комбинаторики при выборе цветов</a></li><li><a href="#случаи-выбора-без-учета-порядка-сочетания">Случаи выбора без учета порядка (Сочетания)</a></li><li><a href="#случаи-выбора-с-учетом-порядка-размещения-и-перестановки">Случаи выбора с учетом порядка (Размещения и Перестановки)</a></li><li><a href="#таблица-вариантов-выбора-роз">Таблица вариантов выбора роз</a></li><li><a href="#влияние-повторяющихся-цветов-на-расчеты">Влияние повторяющихся цветов на расчеты</a></li><li><a href="#практическое-применение-в-садоводстве">Практическое применение в садоводстве</a></li><li><a href="#ограничения-и-реальные-условия">Ограничения и реальные условия</a></li><li><a href="#заключение">Заключение</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-lopaetsya-arbuz-v-teplitse.html">Почему трескается арбуз в теплице: причины и способы спасения урожая</a></li><li><a href="/articles/k/ka/kakie-samye-rannie-pomidory-i-urozhajnye-dlya-teplits.html">Самые ранние и урожайные сорта томатов для теплиц: топ-10 и советы</a></li><li><a href="/articles/k/ka/kakoj-sort-ogurtsov-samyj-vkusnyj-i-urozhajnyj-dlya-teplitsy.html">Самые вкусные и урожайные сорта огурцов для теплицы: рейтинг и выбор</a></li><li><a href="/articles/k/ka/kakie-ogurtsy-luchshe-dlya-zasolki-nazvanie-v-teplitse.html">Топ сортов огурцов для засолки в теплице: лучшие пупырчатые гибриды</a></li><li><a href="/articles/k/ka/kakie-tomaty-samye-urozhajnye-dlya-teplits.html">Самые урожайные сорта томатов для теплиц: ТОП-10 и советы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>В теплице растут розы 6 цветов: сколькими способами выбрать букет?</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основы-комбинаторики-при-выборе-цветов">Основы комбинаторики при выборе цветов</a></li><li><a href="#случаи-выбора-без-учета-порядка-сочетания">Случаи выбора без учета порядка (Сочетания)</a></li><li><a href="#случаи-выбора-с-учетом-порядка-размещения-и-перестановки">Случаи выбора с учетом порядка (Размещения и Перестановки)</a></li><li><a href="#таблица-вариантов-выбора-роз">Таблица вариантов выбора роз</a></li><li><a href="#влияние-повторяющихся-цветов-на-расчеты">Влияние повторяющихся цветов на расчеты</a></li><li><a href="#практическое-применение-в-садоводстве">Практическое применение в садоводстве</a></li><li><a href="#ограничения-и-реальные-условия">Ограничения и реальные условия</a></li><li><a href="#заключение">Заключение</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Часто садоводы, разглядывая свои посадки, задаются вопросом не только о том, как ухаживать за растениями, но и о том, как разнообразить их использование. Представьте ситуацию: в вашей <strong>теплице</strong> выросло ровно 6 роз, и каждая из них имеет свой уникальный оттенок. Перед вами стоит задача собрать букет или просто выбрать цветы для декора. На первый взгляд кажется, что вариантов немного, но математический подход открывает удивительные возможности, зависящие от условий задачи.</p>
+
+<p>Когда мы говорим о том, <strong>сколькими способами</strong> можно выбрать цветы, важно сразу понять контекст. Имеется ли в виду просто набор цветов для букета, где порядок не важен, или речь идет о расстановке их в вазе, где последовательность играет ключевую роль? В мире <strong>комбинаторики</strong> эти два сценария дают совершенно разные результаты, и для правильного ответа нужно определить, повторяются ли оттенки и учитывается ли порядок высадки.</p>
+
+<h2 id="основы-комбинаторики-при-выборе-цветов">Основы комбинаторики при выборе цветов</h2>
+<p>Чтобы понять, <strong>сколькими способами</strong> можно действовать, необходимо рассмотреть базовые принципы. Если у вас есть 6 роз разных цветов и вы хотите выбрать из них, например, 3 для букета, это классическая задача на сочетания. В этом случае важен только состав букета, а не то, в каком порядке вы срезали цветы. Математическая формула позволяет точно подсчитать количество вариантов, исключая повторения и лишние комбинации.</p>
+
+<p>Однако, если ваша цель — создать цветник или определить порядок цветов в ряду, задача усложняется. Здесь вступает в силу понятие <strong>размещений</strong>, где перестановка местами двух разных роз создает новый, уникальный вариант. Понимание разницы между этими понятиями критично для планирования ландшафтного дизайна или организации фотосессии с вашими растениями.</p>
+
+<p>Важно отметить, что в реальной теплице условия могут варьироваться. Иногда розы могут быть одинаковыми по цвету, а иногда — абсолютно уникальными. Именно от этого фактора зависит итоговое число. <strong>Уникальность</strong> каждого экземпляра меняет формулу расчета кардинальным образом.</p>
+
+<h2 id="случаи-выбора-без-учета-порядка-сочетания">Случаи выбора без учета порядка (Сочетания)</h2>
+<p>Рассмотрим ситуацию, когда вы просто хотите выбрать группу роз. Предположим, в теплице растет 6 роз разных цветов, и вам нужно выбрать из них 2 для подарка. Поскольку порядок выбора не важен (букет из красной и белой розы тот же, что и из белой и красной), мы используем формулу <strong>сочетаний</strong>. Это самый частый сценарий при составлении букетов.</p>
+
+<p>Давайте посчитаем: если вы выбираете 2 розы из 6, количество способов будет равно 15. Если же вы выбираете все 6 роз (составляете большой букет из всего урожая), то здесь существует всего один способ — взять все имеющиеся цветы. Это логично, так как, взяв все доступные варианты, вы не можете составить другую группу.</p>
+
+<ul>
+<li>🌹 Порядок выбора цветов для букета не имеет значения.</li>
+<li>🌹 Главное — это состав группы, а не последовательность срезки.</li>
+<li>🌹 Формула сочетаний используется для подсчета вариативности наборов.</li>
+<li>🌹 Повторения цветов в одном букете невозможны, если розы уникальны.</li>
+</ul>
+
+<p>Интересно, что если бы розы были не уникальными, а, например, по 3 красные, 2 белые и 1 желтая, расчеты усложнились бы многократно. В таких случаях приходится учитывать количество повторений каждого цвета, что требует применения специальных формул для сочетаний с повторениями.</p>
+
+<div class="pb-poll" id="poll-1f47ccbd"><div class="pb-poll-question">📊 Сколько роз обычно в вашем букете?</div><div class="pb-poll-option" data-poll="1f47ccbd" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">1-3</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1f47ccbd" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">4-5</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1f47ccbd" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">6-10</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1f47ccbd" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 10</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="случаи-выбора-с-учетом-порядка-размещения-и-перестановки">Случаи выбора с учетом порядка (Размещения и Перестановки)</h2>
+<p>Ситуация кардинально меняется, если вы планируете посадить розы в ряд или поставить их в длинную вазу так, чтобы каждый цветок занимал свое место. Здесь <strong>порядок</strong> становится решающим фактором. Если вы меняете местами первую и последнюю розу, получается новая композиция. Это задача на <strong>размещения</strong> или <strong>перестановки</strong>, в зависимости от того, берете ли вы все цветы или только часть.</p>
+
+<p>Если требуется расставить все 6 роз в определенном порядке, количество способов будет равно факториалу числа 6 (обозначается как 6!). Это означает умножение 6 × 5 × 4 × 3 × 2 × 1, что дает результат 720. Это внушительное число вариантов для всего лишь шести цветов, что показывает, насколько богат фантазия при создании композиций.</p>
+
+<blockquote>⚠️ Внимание: При планировании посадки в ряд учитывайте, что 720 вариантов — это теоретическое число. На практике некоторые комбинации могут выглядеть неэстетично из-за контраста цветов или высоты растений.</blockquote>
+
+<p>Если же вам нужно выбрать только 3 розы из 6 и расставить их в вазе, формула будет иной. Мы используем размещения без повторений. В этом случае количество вариантов составит 120. Как видите, уже выбор меньшего количества цветов с учетом порядка дает результат, превышающий количество вариантов простого набора.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для визуализации количества вариантов расстановки роз используйте графические программы или эскизы, так как в уме отследить 720 комбинаций практически невозможно.</p></aside>
+
+<h2 id="таблица-вариантов-выбора-роз">Таблица вариантов выбора роз</h2>
+<p>Для наглядности сравним количество способов в зависимости от условий задачи. Ниже приведена таблица, которая поможет вам быстро определить искомое число при различных сценариях использования урожая теплицы.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Условие задачи</th>
+<th>Тип задачи</th>
+<th>Количество способов</th>
+<th>Применение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Выбрать 3 розы из 6 (порядок не важен)</td>
+<td>Сочетания</td>
+<td>20</td>
+<td>Составление букетов</td>
+</tr>
+<tr>
+<td>Выбрать 3 розы из 6 (порядок важен)</td>
+<td>Размещения</td>
+<td>120</td>
+<td>Расстановка в вазе</td>
+</tr>
+<tr>
+<td>Расставить все 6 роз в ряд</td>
+<td>Перестановки</td>
+<td>720</td>
+<td>Ландшафтный дизайн</td>
+</tr>
+<tr>
+<td>Выбрать 1 розу из 6</td>
+<td>Простой выбор</td>
+<td>6</td>
+<td>Срезка одного цветка</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Анализ таблицы показывает, как сильно меняется результат в зависимости от требований к композиции. Даже при выборе всего одной розы количество вариантов совпадает с количеством доступных цветов, но при увеличении выборки и добавлении условия порядка цифры растут экспоненциально.</p>
+
+<h2 id="влияние-повторяющихся-цветов-на-расчеты">Влияние повторяющихся цветов на расчеты</h2>
+<p>В реальности теплица может быть засажена несколькими кустами одного сорта. Если в ваших 6 розах есть повторения (например, 3 красные и 3 белые), задача становится значительно сложнее. Количество уникальных <strong>перестановок</strong> резко сокращается, так как замена одной красной розы на другую не создает нового варианта композиции.</p>
+
+<p>Для расчета в таких случаях используется формула перестановок с повторениями. Она делит общий факториал на факториалы количества одинаковых элементов. Это позволяет исключить дублирующиеся варианты, которые визуально не отличимы друг от друга. <strong>Учет повторов</strong> необходим для точного планирования дизайна.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка условий задачи</h4><label class="check-item"><input type="checkbox"><span>Сколько всего цветов?</span></label><label class="check-item"><input type="checkbox"><span>Есть ли одинаковые оттенки?</span></label><label class="check-item"><input type="checkbox"><span>Важен ли порядок?</span></label><label class="check-item"><input type="checkbox"><span>Нужно ли использовать все розы?</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<details class="pb-accordion"><summary>Как рассчитать перестановки с повторениями</summary><div class="pb-accordion-body"><p>Если у вас 3 красные розы и 3 белые, формула будет выглядеть как 6! / (3! <em> 3!). Это равно 720 / (6 </em> 6) = 20 уникальных вариантов расстановки.</p></div></details>
+
+<p>Представьте, что вы срезали 6 роз, но среди них 4 оказались красными, а 2 — желтыми. Количество способов расставить их в ряд будет равно 15, а не 720. Это наглядный пример того, как <strong>однородность</strong> материала ограничивает количество комбинаций.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Повторяющиеся цвета значительно уменьшают количество уникальных вариантов перестановок, упрощая выбор композиции, но ограничивая разнообразие.</p></aside>
+
+<h2 id="практическое-применение-в-садоводстве">Практическое применение в садоводстве</h2>
+<p>Зачем вообще нужно знать эти цифры садоводу? Понимание количества способов помогает планировать экспозиции, фотозоны и продажи цветов. Если вы знаете, что можете создать 720 уникальных рядов из 6 роз разных цветов, вы можете смело экспериментировать с дизайном клумб, зная, что каждый сезон можно создать новую композицию.</p>
+
+<p>Также это полезно при организации мастер-классов по флористике. Вы можете показать ученикам, как из ограниченного набора материалов можно создать множество уникальных работ. Это повышает ценность вашего урока и вдохновляет на творчество. <strong>Творческий потенциал</strong> напрямую связан с математическими возможностями.</p>
+
+<blockquote>⚠️ Внимание: Математические расчеты дают теоретическое количество вариантов. Реализация всех 720 способов может потребовать слишком много времени и ресурсов, поэтому выбирайте только наиболее эстетичные комбинации.</blockquote>
+
+<p>Кроме того, знание комбинаторики помогает при закупке семян. Если вы хотите разбить теплицу так, чтобы каждый год получать уникальную расцветку, математика подскажет, сколько сортов вам нужно купить для достижения желаемого разнообразия.</p>
+
+<h2 id="ограничения-и-реальные-условия">Ограничения и реальные условия</h2>
+<p>Несмотря на то, что математика дает точные ответы, жизнь теплицы накладывает свои ограничения. Некоторые розы могут быть повреждены болезнями или вредителями, что исключает их из числа доступных для срезки. В таком случае количество <strong>исходных данных</strong> уменьшается, и расчеты нужно проводить заново.</p>
+
+<p>Также стоит учитывать сезонность. В разные месяцы количество доступных цветов может меняться. Если вы планируете выбрать 6 роз из теплицы, а на момент срезки их всего 4, задача становится невыполнимой в исходном виде. Необходимо адаптировать условия под <strong>реальное наличие</strong> растений.</p>
+
+<h2 id="заключение">Заключение</h2>
+<p>Подводя итог, можно сказать, что вопрос о том, сколькими способами можно выбрать 6 роз, не имеет единственного ответа. Все зависит от того, учитываете ли вы порядок, есть ли у вас возможность выбрать не все цветы и одинаковы ли они по оттенку. От 6 вариантов при простом выборе одной розы до 720 при расстановке всех уникальных цветов — диапазон огромен.</p>
+
+<p>Используйте эти знания для украшения своего участка и создания уникальных композиций. Пусть математика служит вам инструментом для творчества, помогая планировать идеальные цветники и букеты. <strong>Ваша теплица</strong> — это не просто огород, а поле для бесконечных экспериментов.</p>
+
+<details class="pb-accordion"><summary>Интересный факт</summary><div class="pb-accordion-body"><p> Если бы вы меняли порядок роз каждый день, 720 вариантов хватило бы вам почти на два года, чтобы каждый день иметь уникальную композицию из 6 роз.</p></div></details>
+
+<details>
+<summary>Сколько способов выбрать все 6 роз, если порядок не важен?</summary>
+<p>Если порядок не важен и вы выбираете все 6 роз из 6 имеющихся, существует только 1 способ — взять все цветы сразу.</p>
+</details>
+
+<details>
+<summary>Как изменится количество способов, если розы одинакового цвета?</summary>
+<p>Если все 6 роз одного цвета, то количество уникальных способов их расстановки (перестановок) равно 1, так как замена одной розы на другую не меняет внешний вид композиции.</p>
+</details>
+
+<details>
+<summary>Что такое факториал и как он связан с розами?</summary>
+<p>Факториал числа N (N!) — это произведение всех натуральных чисел от 1 до N. В задаче с розами факториал 6 (6!) равен 720, что показывает количество способов расставить 6 уникальных цветов в ряд.</p>
+</details>
+
+<details>
+<summary>Можно ли выбрать 3 розы из 6, если их нельзя повторять?</summary>
+<p>Да, если розы уникальны, вы можете выбрать 3 розы из 6. Если порядок не важен, это 20 способов (сочетания), а если важен — 120 способов (размещения).</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-lopaetsya-arbuz-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Почему трескается арбуз в теплице: причины и способы спасения урожая</span>
+                <span class="pb-related-desc">Узнайте главные причины растрескивания арбузов в теплице. Разбор ошибок полива, перекорма и сортов. </span>
+            </a><a href="/articles/k/ka/kakie-samye-rannie-pomidory-i-urozhajnye-dlya-teplits.html" class="pb-related-card">
+                <span class="pb-related-title">Самые ранние и урожайные сорта томатов для теплиц: топ-10 и советы</span>
+                <span class="pb-related-desc">Выбираем лучшие ранние и высокоурожайные сорта томатов для теплицы. Обзор сортов, таблица характерис</span>
+            </a><a href="/articles/k/ka/kakoj-sort-ogurtsov-samyj-vkusnyj-i-urozhajnyj-dlya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Самые вкусные и урожайные сорта огурцов для теплицы: рейтинг и выбор</span>
+                <span class="pb-related-desc">Подборка лучших сортов и гибридов огурцов для выращивания в теплице. Сравнительная характеристика, с</span>
+            </a><a href="/articles/k/ka/kakie-ogurtsy-luchshe-dlya-zasolki-nazvanie-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Топ сортов огурцов для засолки в теплице: лучшие пупырчатые гибриды</span>
+                <span class="pb-related-desc">Выбираем идеальные огурцы для засолки в теплице. Обзор лучших сортов, их вкус, хруст и устойчивость </span>
+            </a><a href="/articles/k/ka/kakie-tomaty-samye-urozhajnye-dlya-teplits.html" class="pb-related-card">
+                <span class="pb-related-title">Самые урожайные сорта томатов для теплиц: ТОП-10 и советы</span>
+                <span class="pb-related-desc">Рейтинг урожайных сортов помидоров для теплицы. Обзор гибридов, индетерминантных и детерминантных ви</span>
+            </a><a href="/articles/t/te/teplitsa-chto-sadit.html" class="pb-related-card">
+                <span class="pb-related-title">Что сажать в теплице: выбор культур и схемы посадки</span>
+                <span class="pb-related-desc">Полный гид по выбору культур для теплицы. Узнайте, что сажать вместе, таблицы совместимости, севообо</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

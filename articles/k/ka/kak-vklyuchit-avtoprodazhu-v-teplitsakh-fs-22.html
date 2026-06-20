@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как включить автопродажу в теплицах в Farm Simulator 22: полное руководство — Теплица Инфо</title>
+    <meta name="description" content="Подробная инструкция по настройке автоматической продажи урожая в теплицах FS22. Редактирование XML, выбор транспорта и настройка логистики.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-vklyuchit-avtoprodazhu-v-teplitsakh-fs-22.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как включить автопродажу в теплицах в Farm Simulator 22: полное руководство">
+    <meta property="og:description" content="Подробная инструкция по настройке автоматической продажи урожая в теплицах FS22. Редактирование XML, выбор транспорта и настройка логистики.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/instrumenty-i-oborudovanie/">Инструменты и оборудование</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как включить автопродажу в теплицах в Farm Simulator 22: полное руководство</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-механику-автоматизации-в-симуляторе">Введение в механику автоматизации в симуляторе</a></li><li><a href="#использование-модов-для-автоматизации-продаж">Использование модов для автоматизации продаж</a></li><li><a href="#настройка-логистики-и-транспортных-средств">Настройка логистики и транспортных средств</a></li><li><a href="#редактирование-файлов-игры-для-ручной-настройки">Редактирование файлов игры для ручной настройки</a></li><li><a href="#использование-ai-тракторов-и-систем-умной-фермы">Использование AI-тракторов и систем умной фермы</a></li><li><a href="#потенциальные-проблемы-и-способы-их-решения">Потенциальные проблемы и способы их решения</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-ustanovit-v-teplitse-termoprivod.html">Как установить термопривод в теплице: пошаговая инструкция по монтажу</a></li><li><a href="/articles/k/ka/kakie-zatenyayushchie-setki-dlya-teplitsy.html">Какие затеняющие сетки для теплицы выбрать: виды и монтаж</a></li><li><a href="/articles/t/te/termoprivod-kak-rabotaet-dlya-teplits.html">Термопривод для теплицы: принцип работы, установка и настройка</a></li><li><a href="/articles/g/gd/gde-kupit-plenku-svetlitsu-dlya-pokrytiya-teplitsy.html">Где купить пленку Светлица: цены, адреса и отзывы</a></li><li><a href="/articles/k/ka/kak-ukhazhivat-za-teplitsami-iz-polikarbonata.html">Уход за теплицами из поликарбоната: полная инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как включить автопродажу в теплицах Farm Simulator 22: настройка логистики и модов</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-механику-автоматизации-в-симуляторе">Введение в механику автоматизации в симуляторе</a></li><li><a href="#использование-модов-для-автоматизации-продаж">Использование модов для автоматизации продаж</a></li><li><a href="#настройка-логистики-и-транспортных-средств">Настройка логистики и транспортных средств</a></li><li><a href="#редактирование-файлов-игры-для-ручной-настройки">Редактирование файлов игры для ручной настройки</a></li><li><a href="#использование-ai-тракторов-и-систем-умной-фермы">Использование AI-тракторов и систем умной фермы</a></li><li><a href="#потенциальные-проблемы-и-способы-их-решения">Потенциальные проблемы и способы их решения</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-механику-автоматизации-в-симуляторе">Введение в механику автоматизации в симуляторе</h2>
+
+<p>Фермерские симуляторы, и <em>Farm Simulator 22</em> в частности, предлагают игрокам глубокую систему управления хозяйством, где ручной сбор и продажа урожая быстро надоедают. Многие пользователи ищут способ автоматизировать этот процесс, особенно когда речь идет о специфических постройках, таких как <strong>теплицы</strong>. Однако важно сразу прояснить: в базовой версии игры (ванильной) не существует встроенной кнопки «Включить автопродажу» для теплиц.</p>
+
+<p>Механика игры устроена так, что урожай необходимо физически извлечь из производственного здания, погрузить на транспортное средство и доставить на торговую точку. Это создает логистическую задачу, которую игроки решают с помощью модификаций или хитростей внутри игрового меню. Понимание этой разницы между <strong>реальным временем</strong> и <strong>автоматизацией</strong> критически важно для дальнейшей настройки вашего хозяйства.</p>
+
+<p>Если вы хотите ускорить процесс получения прибыли, вам придется либо использовать сторонние скрипты, либо внимательно изучить настройки <em>Logistics</em> (логистики) карты. Некоторые карты и моды теплиц имеют встроенные конвейерные ленты, которые упрощают загрузку, но все равно требуют наличия грузовика или прицепа с открытым люком для вывоза товара.</p>
+
+<h2 id="использование-модов-для-автоматизации-продаж">Использование модов для автоматизации продаж</h2>
+
+<p>Самый эффективный способ реализовать автопродажу в <em>Farm Simulator 22</em> — это установить специальные моды, которые меняют логику работы игровых объектов. В сообществе игроков популярны моды, добавляющие <strong>конвейерные системы</strong> и <strong>автозагрузку</strong> на прицепы. Без таких дополнений вам придется вручную подъезжать к выходу из теплицы и ждать, пока урожай соберется в кучу.</p>
+
+<p>Для поиска необходимых модов переходите в игровое меню <code>Моды</code> -> <code>Фильтр</code> и введите запросы типа «Auto Sell», «Greenhouse Automation» или «Conveyor Belts». Обратите внимание на совместимость версий: моды, созданные для FS19, могут не работать в FS22 без патчей. Ищите файлы с пометкой <strong>FS22</strong> в описании, чтобы избежать конфликтов и вылетов.</p>
+
+<p>Особенно интересны моды, которые добавляют функцию <em>Trigger</em> (триггер) для продажи. Это специальные зоны на карте или внутри зданий, которые при приближении грузовика автоматически выгружают и продают товар. В таких случаях вам нужно просто настроить маршрут грузовика, и он будет ездить по кругу, продавая урожай из теплицы.</p>
+
+<ul>
+ <li>🚜 Ищите моды с функцией <strong>Auto Unload</strong> для прицепов, чтобы не нажимать кнопку выгрузки вручную.</li>
+ <li>🏭 Выбирайте дополнения, добавляющие <strong>конвейерные ленты</strong> прямо к выходу из теплицы для ускорения загрузки.</li>
+ <li>📉 Устанавливайте скрипты, которые автоматически направляют транспорт на <strong>ближайший пункт продажи</strong> конкретного товара.</li>
+</ul>
+
+<p>Помните, что установка модов требует осторожности. Неправильно настроенный скрипт может заблокировать выход из здания или создать бесконечный цикл загрузки. Всегда делайте резервную копию сохранения перед активацией новых дополнений, особенно тех, что меняют физику объектов.</p>
+
+<div class="pb-poll" id="poll-846ed87b"><div class="pb-poll-question">📊 Какой метод автоматизации вы используете чаще всего?</div><div class="pb-poll-option" data-poll="846ed87b" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Ванильная механика (вручную)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="846ed87b" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Моды на конвейеры</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="846ed87b" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Скрипты автопродажи (AI)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="846ed87b" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не автоматизирую</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройка-логистики-и-транспортных-средств">Настройка логистики и транспортных средств</h2>
+
+<p>Даже без сложных скриптов можно значительно упростить процесс реализации урожая, грамотно настроив логистику. В <em>Farm Simulator 22</em> ключевым элементом является правильный выбор <strong>транспортного средства</strong>. Обычные тракторы с прицепами часто не могут заехать внутрь теплицы из-за узких ворот, поэтому требуется использование специализированных малых грузовиков или тележек с электрическим приводом.</p>
+
+<p>Если вы используете моды с конвейерами, убедитесь, что <code>Trigger</code> выгрузки настроен корректно. В настройках мода часто можно указать тип транспорта, который должен обслуживать определенную точку. Это позволяет избежать ситуаций, когда огромный грузовик не может развернуться и заблокирует производство. Оптимально, когда прицеп сам подъезжает к выходу, а конвейер загружает урожай без участия игрока.</p>
+
+<p>Важно учитывать вместимость транспортных средств. Теплица может производить значительное количество <strong>перцев, огурцов или помидоров</strong> за игровой день. Если прицеп слишком мал, ему придется совершать множество рейсов, что замедлит процесс. Подбирайте технику с объемом кузова, соответствующим производительности вашей теплицы.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Настройка логистики теплицы</h4><label class="check-item"><input type="checkbox"><span>Проверить ширину ворот теплицы</span></label><label class="check-item"><input type="checkbox"><span>Подобрать транспорт нужной вместимости</span></label><label class="check-item"><input type="checkbox"><span>Установить конвейерную ленту</span></label><label class="check-item"><input type="checkbox"><span>Настроить точку выгрузки (Trigger)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+ <tr>
+ <th>Тип транспорта</th>
+ <th>Пример модели</th>
+ <th>Применимость для теплиц</th>
+ <th>Особенности</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Малый грузовик</td>
+ <td><em>Unimog U400</em></td>
+ <td>Высокая</td>
+ <td>Маневренный, подходит для узких проходов</td>
+ </tr>
+ <tr>
+ <td>Прицеп с конвейером</td>
+ <td><em>Strothmann</em> (мод)</td>
+ <td>Средняя</td>
+ <td>Требует наличия конвейера на выходе</td>
+ </tr>
+ <tr>
+ <td>Электрическая тележка</td>
+ <td><em> Transporter</em></td>
+ <td>Высокая</td>
+ <td>Медленная, но идеальна для внутреннего двора</td>
+ </tr>
+ <tr>
+ <td>Стандартный прицеп</td>
+ <td><em>Lemken</em> (мод)</td>
+ <td>Низкая</td>
+ <td>Сложно загрузить без механизмов</td>
+ </tr>
+ </tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: Убедитесь, что выбранная вами модель транспорта имеет функцию <strong>самопогрузки</strong> или совместима с установленными вами конвейерными лентами. Без этого механика автопродажи не сработает корректно.</p>
+</blockquote>
+
+<h2 id="редактирование-файлов-игры-для-ручной-настройки">Редактирование файлов игры для ручной настройки</h2>
+
+<p>Для продвинутых пользователей, готовых вмешаться в код игры, существует возможность ручного редактирования файлов теплиц. Это позволяет добавить собственный <strong>триггер продажи</strong> (sell trigger) прямо в XML-файл здания. Однако этот метод требует знания структуры файлов игры и навыков работы с текстовыми редакторами.</p>
+
+<p>Вам нужно найти файл <code>greenhouse.xml</code> (или аналогичный, в зависимости от мода/карты), который находится в папке с игрой или в папке модов. Внутри файла ищите секцию <code>trigger</code>. Вам необходимо добавить параметр <code>sellTrigger</code> и указать координаты точки, где происходит продажа. Это сложный процесс, так как неверные координаты могут привести к тому, что урожай будет улетать в никуда или блокировать выход.</p>
+
+<p>Не забудьте сделать резервную копию оригинального файла перед внесением изменений. В случае ошибки игра может перестать загружать карту. Используйте редакторы с подсветкой синтаксиса, чтобы избежать опечаток в тегах. После сохранения файла запустите игру и проверьте работу механизма в режиме <strong>создания новой игры</strong> или на тестовой карте.</p>
+
+<details class="pb-accordion"><summary>Пример структуры XML для триггера</summary><div class="pb-accordion-body"><p>В секции'trigger' добавьте строки: <sellTrigger x="0" y="0" z="0" />. Координаты указывают точку выгрузки. Если они не совпадают с реальным положением конвейера, продажа не сработает.</p></div></details>
+
+<blockquote>
+<p>⚠️ Внимание: Редактирование системных файлов может привести к <strong>потере сохранения</strong> или некорректной работе игры при обновлении. Используйте этот метод только если вы уверены в своих навыках работы с XML.</p>
+</blockquote>
+
+<p>Если вы не хотите рисковать сохранением, используйте готовые моды, которые уже содержат настроенные триггеры. В описании таких модов часто указываются координаты или требования к размещению, что упрощает процесс интеграции в вашу ферму.</p>
+
+<h2 id="использование-ai-тракторов-и-систем-умной-фермы">Использование AI-тракторов и систем умной фермы</h2>
+
+<p>Еще один способ автоматизации — использование мода <em>Artificial Intelligence (AI)</em> для тракторов. Этот режим позволяет назначить трактору с прицепом задачу по сбору и продаже урожая. Трактор сам подъедет к теплице, загрузит продукт (если есть механизм загрузки) и отвезет его на продажу. Это решение не требует глубокого знания кода, но требует настройки логики движения.</p>
+
+<p>Для работы <strong>AI-трактора</strong> необходимо построить маршрут, который включает в себя точку выгрузки в теплице и точку продажи. В интерфейсе мода AI вы выбираете транспорт, назначаемый на работу, и указываете цель. Трактор будет выполнять задачу циклически, пока вы не остановите его вручную.</p>
+
+<p>Однако у этого метода есть нюанс: AI-тракторы часто не умеют «чувствовать» конвейеры. Если у вас нет автоматической загрузки, трактор будет стоять рядом с горой урожая и ждать, пока вы сами его погрузите. Поэтому комбинация <em>AI-трактора</em> и <strong>конвейерной ленты</strong> дает наилучший результат для полной автоматизации.</p>
+
+<ul>
+ <li>🤖 Настройте маршрут AI так, чтобы прицеп заезжал в <strong>зону загрузки</strong> конвейера.</li>
+ <li>🔄 Установите режим <strong>«Циклическая работа»</strong> в меню AI, чтобы транспорт не останавливался после одной поездки.</li>
+ <li>📊 Следите за <strong>уровнем заполнения</strong> прицепов, чтобы избежать простоев из-за переполнения.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед запуском AI-трактора убедитесь, что путь от теплицы до точки продажи свободен от препятствий и препятствий, которые могут заблокировать транспорт.</p></aside>
+
+<h2 id="потенциальные-проблемы-и-способы-их-решения">Потенциальные проблемы и способы их решения</h2>
+
+<p>При настройке автопродажи в теплицах вы можете столкнуться с рядом технических проблем. Самая частая — блокировка выхода из здания. Если приезд транспорта перекрыт или конвейер настроен неправильно, урожай перестает производиться, так как в теплице нет места для нового продукта. В таких случаях необходимо проверить <strong>координаты триггера</strong> и размеры ворот.</p>
+
+<p>Другая проблема — несовместимость модов. Если вы установили несколько модов, изменяющих логику теплиц или грузовиков, они могут конфликтовать друг с другом. Игра может выдать ошибку при загрузке или просто игнорировать команды автопродажи. Решением является удаление лишних модов и проверка работы по одному.</p>
+
+<p>Также стоит учитывать производительность компьютера. Большое количество автоматизированных процессов, особенно с конвейерами и AI-тракторами, может снижать FPS. Если игра начинает тормозить, попробуйте уменьшить количество активных <strong>авто-тракторов</strong> или упростить схему конвейерных линий.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если автопродажа перестала работать после обновления игры, проверьте <strong>версию модов</strong>. Разработчики могут изменить координаты триггеров или логику работы грузовиков, что сломает старые модификации.</p>
+</blockquote>
+
+<p>Всегда тестируйте работу системы на небольшом цикле перед тем, как доверить ей управление всем урожаем. Это позволит вовремя выявить ошибки и предотвратить потерю продукта из-за переполнения или сбоя в логистике.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: часто задаваемые вопросы</h2>
+
+<details>
+ <summary>Есть ли встроенная функция автопродажи в теплицах в FS22?</summary>
+ <p>Нет, в стандартной версии игры нет кнопки «Автопродажа». Вам нужно использовать моды или вручную загружать урожай на транспорт.</p>
+</details>
+
+<details>
+ <summary>Какой мод лучше всего подходит для автоматизации теплиц?</summary>
+ <p>Популярны моды с названием «Greenhouse Automation» или «Conveyor Belts». Они добавляют ленты и триггеры выгрузки прямо в здание.</p>
+</details>
+
+<details>
+ <summary>Можно ли использовать AI-трактор для продажи урожая из теплицы?</summary>
+ <p>Да, можно, но только если у теплицы есть автоматическая загрузка (конвейер), так как AI трактор не умеет сам загружать тару из здания.</p>
+</details>
+
+<details>
+ <summary>Что делать, если урожай не выгружается в прицеп?</summary>
+ <p>Проверьте высоту конвейера и положение прицепов. Убедитесь, что прицеп находится в зоне действия <code>Trigger</code> выгрузки.</p>
+</details>
+
+<details>
+ <summary>Влияет ли настройка автопродажи на прибыль?</summary>
+ <p>Нет, цена продажи остается стандартной. Автоматизация лишь экономит ваше время и позволяет быстрее осваивать новые циклы производства.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Автоматизация продажи в FS22 требует комбинации модов на конвейеры, правильно настроенного транспорта и, при желании, AI-тракторов для полной автономности.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-ustanovit-v-teplitse-termoprivod.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить термопривод в теплице: пошаговая инструкция по монтажу</span>
+                <span class="pb-related-desc">Полное руководство по установке термопривода в теплице. Выбор места, крепление, настройка хода поршн</span>
+            </a><a href="/articles/k/ka/kakie-zatenyayushchie-setki-dlya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Какие затеняющие сетки для теплицы выбрать: виды и монтаж</span>
+                <span class="pb-related-desc">Обзор затеняющих сеток для теплиц: плотность, цвет, монтаж. Как спасти урожай от ожогов и перегрева.</span>
+            </a><a href="/articles/t/te/termoprivod-kak-rabotaet-dlya-teplits.html" class="pb-related-card">
+                <span class="pb-related-title">Термопривод для теплицы: принцип работы, установка и настройка</span>
+                <span class="pb-related-desc">Полный гид по термоприводу: как работает автоматическое проветривание, виды устройств, пошаговая инс</span>
+            </a><a href="/articles/g/gd/gde-kupit-plenku-svetlitsu-dlya-pokrytiya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить пленку Светлица: цены, адреса и отзывы</span>
+                <span class="pb-related-desc">Ищете, где купить пленку для теплицы Светлица? Полная информация о производителях, типах светостабил</span>
+            </a><a href="/articles/k/ka/kak-ukhazhivat-za-teplitsami-iz-polikarbonata.html" class="pb-related-card">
+                <span class="pb-related-title">Уход за теплицами из поликарбоната: полная инструкция</span>
+                <span class="pb-related-desc">Как ухаживать за теплицей из поликарбоната: мытье, дезинфекция, ремонт и подготовка к зиме. Продлите</span>
+            </a><a href="/articles/k/ka/kak-sdelat-osveshchenie-v-teplitse-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Освещение в теплице своими руками: выбор ламп и расчет мощности</span>
+                <span class="pb-related-desc">Пошаговая инструкция по организации искусственного света в теплице. Расчет мощности, выбор фитоламп,</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

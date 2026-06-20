@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как сделать автоматическую теплицу: пошаговая инструкция — Теплица Инфо</title>
+    <meta name="description" content="Узнайте, как собрать умную теплицу своими руками. Контроль полива, проветривания и климата на базе Arduino и готовых решений для огорода.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-sdelat-avtomaticheskuyu-teplitsu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сделать автоматическую теплицу: пошаговая инструкция">
+    <meta property="og:description" content="Узнайте, как собрать умную теплицу своими руками. Контроль полива, проветривания и климата на базе Arduino и готовых решений для огорода.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сделать автоматическую теплицу: пошаговая инструкция</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#выбор-архитектуры-системы-и-контроллера">Выбор архитектуры системы и контроллера</a></li><li><a href="#система-автоматического-полива-и-увлажнения">Система автоматического полива и увлажнения</a></li><li><a href="#механизация-проветривания-и-контроля-температуры">Механизация проветривания и контроля температуры</a></li><li><a href="#дополнительные-датчики-и-мониторинг-среды">Дополнительные датчики и мониторинг среды</a></li><li><a href="#электробезопасность-и-защита-от-сбоев">Электробезопасность и защита от сбоев</a></li><li><a href="#программное-обеспечение-и-настройка-логики">Программное обеспечение и настройка логики</a></li><li><a href="#тестирование-и-эксплуатация-системы">Тестирование и эксплуатация системы</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zarodyshi-ogurtsov-ne-rastut-v-teplitse-chto-delat.html">Огурцы не завязываются в теплице: причины и способы решения</a></li><li><a href="/articles/p/po/pochemu-zhelteyut-listya-u-baklazhan-v-teplitse-i-chto-delat-video.html">Желтеют листья у баклажан в теплице: причины, лечение и видео-инструкция</a></li><li><a href="/articles/k/ka/kak-opylyayutsya-ovoshchi-v-teplitse.html">Опыление овощей в теплице: методы, ошибки и секреты</a></li><li><a href="/articles/c/ch/chem-udobryayut-orkhidei-v-teplitsakh.html">Чем удобряют орхидеи в теплицах: схемы и препараты</a></li><li><a href="/articles/c/ch/chto-mozhno-posadit-vokrug-teplitsy-iz-polikarbonata-snaruzhi-foto.html">Что посадить вокруг теплицы из поликарбоната: фото, схемы и советы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как сделать автоматическую теплицу: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#выбор-архитектуры-системы-и-контроллера">Выбор архитектуры системы и контроллера</a></li><li><a href="#система-автоматического-полива-и-увлажнения">Система автоматического полива и увлажнения</a></li><li><a href="#механизация-проветривания-и-контроля-температуры">Механизация проветривания и контроля температуры</a></li><li><a href="#дополнительные-датчики-и-мониторинг-среды">Дополнительные датчики и мониторинг среды</a></li><li><a href="#электробезопасность-и-защита-от-сбоев">Электробезопасность и защита от сбоев</a></li><li><a href="#программное-обеспечение-и-настройка-логики">Программное обеспечение и настройка логики</a></li><li><a href="#тестирование-и-эксплуатация-системы">Тестирование и эксплуатация системы</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Создание автоматизированной теплицы — это не просто дань современным технологиям, а реальный способ повысить урожайность и снизить трудозатраты. Когда вы уезжаете на выходные или в отпуск, растения остаются без присмотра, что может привести к перегреву или пересыханию грунта. Решение этой проблемы кроется в грамотной интеграции датчиков и исполнительных механизмов, которые будут поддерживать стабильный микроклимат без вашего постоянного участия.</p>
+<p>Самостоятельная сборка системы позволяет настроить параметры именно под ваши культуры, будь то капризные томаты или устойчивые огурцы. Вы получаете полный контроль над <strong>датчиками температуры</strong>, <strong>датчиками влажности почвы</strong> и приводом проветривания. Главное — правильно спроектировать схему и выбрать надежные компоненты, которые выдержат агрессивную среду парника.</p>
+
+<h2 id="выбор-архитектуры-системы-и-контроллера">Выбор архитектуры системы и контроллера</h2>
+<p>Первым шагом является определение логики работы будущей системы. Вам предстоит выбрать между готовыми коммерческими комплексами и сборкой на базе микроконтроллеров. Готовые решения удобны, но часто ограничены в функционале и дороговаты. Самодельная автоматика на базе <em>Arduino</em> или <em>ESP8266</em> дает неограниченные возможности кастомизации и удаленного управления через интернет.</p>
+<p>Для локального управления отлично подходит платформа Arduino Uno, которая стабильно работает без подключения к сети. Если же вы планируете управлять теплицей со смартфона и получать уведомления, лучше рассмотреть <em>ESP32</em> или <em>ESP8266</em>, так как они имеют встроенный Wi-Fi модуль. Выбор процессора зависит от сложности сценариев: простая лампочка и помпа потребуют минимум ресурсов, а сложная система с несколькими зонами полива потребует больше памяти.</p>
+<p>Не забудьте предусмотреть запас по мощности блока питания. Все исполнительные устройства, такие как насосы и сервоприводы, потребляют значительный ток, особенно в момент запуска.</p>
+
+<blockquote>
+<p>⚠️ Внимание! При выборе микроконтроллера учитывайте, что электроника в теплице работает в условиях высокой влажности. Обязательно предусмотрите герметичный корпус для платы управления, иначе конденсат может вызвать короткое замыкание.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-15a14fb8"><div class="pb-poll-question">📊 Какой тип управления вы предпочитаете?</div><div class="pb-poll-option" data-poll="15a14fb8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полностью автоматический (без участия человека)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="15a14fb8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Полуавтоматический (условия задаются вручную)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="15a14fb8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Удаленное управление со смартфона</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="15a14fb8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Только таймеры без датчиков</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="система-автоматического-полива-и-увлажнения">Система автоматического полива и увлажнения</h2>
+<p>Полив — это сердце любой автоматической теплицы. Неправильная дозировка воды может погубить урожай быстрее, чем её отсутствие. Для реализации этой функции необходимо установить <strong>реле управления насосом</strong>, которое будет открывать подачу воды по сигналу от контроллера. Датчик влажности почвы, погруженный в грунт, будет служить главным триггером для запуска процесса.</p>
+<p>Существует несколько схем реализации полива. Простая система капельного полива подает воду непосредственно к корням, экономя ресурсы. Другой вариант — туманообразующие форсунки, которые одновременно поливают и увлажняют воздух, что критично для выращивания рассады или экзотических культур. Выбор зависит от типа растений и ваших финансовых возможностей.</p>
+<p>Важно настроить пороговые значения влажности. Если датчик покажет сухость, система откроет клапан. Как только влажность достигнет заданного уровня, подача прекратится. Однако следует помнить, что датчики могут загрязняться солями из удобрений, поэтому их нужно регулярно калибровать.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка системы полива</h4><label class="check-item"><input type="checkbox"><span>Установить резервуар для воды выше уровня грядок</span></label><label class="check-item"><input type="checkbox"><span>Проложить магистральные трубы</span></label><label class="check-item"><input type="checkbox"><span>Подключить капельные ленты</span></label><label class="check-item"><input type="checkbox"><span>Настроить датчик влажности почвы</span></label><label class="check-item"><input type="checkbox"><span>Проверить герметичность соединений</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Для точного контроля используйте <strong>соленоидные клапаны</strong> с питанием 12 или 24 вольта. Они надежны и долговечны. Если вы используете 12-вольтовую систему, убедитесь, что провода имеют достаточное сечение, чтобы избежать падения напряжения на длинных магистралях.</p>
+
+<blockquote>
+<p>⚠️ Внимание! В зимний период, когда система отключена, вода в трубах может замерзнуть и разорвать их. Перед наступлением холодов обязательно прогоняйте воздух компрессором или сливайте воду из всей системы.</p>
+</blockquote>
+
+<h2 id="механизация-проветривания-и-контроля-температуры">Механизация проветривания и контроля температуры</h2>
+<p>Температурный режим в теплице может меняться стремительно: от +10°C ночью до +40°C днем под палящим солнцем. Для предотвращения перегрева необходим автоматический механизм открывания фрамуг. Здесь на помощь приходят <strong>гидравлические тепловыталкиватели</strong> или <strong>сервоприводы</strong>. Гидравлика работает без электричества, расширяясь от тепла, но она менее точна и медленна в реакции.</p>
+<p>Если вы выбрали электрическую автоматизацию, вам потребуется сервопривод с высоким крутящим моментом. Он подключается к контроллеру, который считывает данные с <strong>термодатчика</strong>. При превышении заданной температуры (например, 25°C) сервопривод начнет медленно открывать окно. При падении температуры — закроет его. Это позволяет поддерживать идеальный климат для фотосинтеза.</p>
+<p>Важно продумать механическую передачу: как именно привод будет двигать створку. Часто используют рычажные механизмы или винтовые пары. Убедитесь, что конструкция имеет фиксаторы в закрытом положении, чтобы сильный ветер не сорвал ее.</p>
+
+<details class="pb-accordion"><summary>Почему гидравлика может не подойти?</summary><div class="pb-accordion-body"><p>Гидравлические поршни реагируют на температуру воздуха, а не на температуру растения. В пасмурный и жаркий день они могут открыть окно слишком поздно, когда листья уже получили тепловой удар. Электрические системы с датчиками реагируют мгновенно.</p></div></details>
+
+<p>Для вентиляторов охлаждения используйте реле, способные коммутировать нагрузку вентилятора. Они должны быть рассчитаны на постоянное включение и отключение. Правильная настройка гистерезиса (разницы между температурой открытия и закрытия) предотвратит постоянные колебания окна, что продлит жизнь механизму.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Установите датчик температуры не на солнце, а в тени, желательно на уровне корневой системы растений, чтобы получать реальные данные о микроклимате, а не о температуре нагретого воздуха у стекла.</p></aside>
+
+<h2 id="дополнительные-датчики-и-мониторинг-среды">Дополнительные датчики и мониторинг среды</h2>
+<p>Помимо температуры и влажности почвы, для создания полноценной экосистемы полезно отслеживать и другие параметры. Например, <strong>датчик освещенности</strong> поможет понять, когда нужно включить досветку, если теплица расположена в тени деревьев. Это особенно актуально в пасмурные дни или зимой.</p>
+<p>Также стоит рассмотреть установку датчика дождя. Если пойдет сильный ливень, система автоматически закроет окна и отключит подачу воды, чтобы не переувлажнять грунт и не допустить заболеваний корневой системы. Интеграция таких устройств значительно повышает надежность всей конструкции.</p>
+<p>Сбор данных о состоянии теплицы можно выводить на локальный дисплей или отправлять в облако. Это позволит вам видеть историю изменений климата и анализировать эффективность вашей системы. Вы сможете понять, например, что в полдень температура подскакивает слишком быстро, и скорректировать настройки проветривания.</p>
+
+<h2 id="электробезопасность-и-защита-от-сбоев">Электробезопасность и защита от сбоев</h2>
+<p>Электрика в теплице — это зона повышенного риска. Высокая влажность в сочетании с конденсатом и возможным попаданием воды требует особого подхода к монтажу. Все соединения должны быть заизолированы и помещены в герметичные распределительные коробки. Используйте провода с двойной изоляцией, устойчивые к ультрафиолету, если они проложены на улице.</p>
+<p>Для защиты от скачков напряжения в сети необходимо установить стабилизатор или хотя бы сетевой фильтр. Резкие перепады могут вывести из строя дорогой контроллер или сжечь обмотку реле. Также рекомендуется использовать автоматические выключатели (автоматы) на каждую линию питания: насос, вентиляторы, освещение.</p>
+<p>Не забудьте про систему резервного питания. Если свет отключат в самый жаркий день, растения могут погибнуть за несколько часов. Использование аккумуляторных батарей и инвертора позволит системе проработать автономно до восстановления электроснабжения.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Компонент</th>
+      <th>Назначение</th>
+      <th>Рекомендуемое напряжение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Микроконтроллер</td>
+      <td>Мозг системы, обработка данных</td>
+      <td>5V - 12V (через USB или адаптер)</td>
+    </tr>
+    <tr>
+      <td>Реле питания</td>
+      <td>Включение/выключение насосов и света</td>
+      <td>220V (сеть) / 12V (управление)</td>
+    </tr>
+    <tr>
+      <td>Сервопривод</td>
+      <td>Открытие и закрытие окон</td>
+      <td>6V - 12V</td>
+    </tr>
+    <tr>
+      <td>Датчик почвы</td>
+      <td>Измерение влажности грунта</td>
+      <td>3.3V - 5V (аналоговый сигнал)</td>
+    </tr>
+    <tr>
+      <td>Солнечная панель</td>
+      <td>Зарядка аккумуляторов для автономности</td>
+      <td>12V - 18V</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Организация заземления — критически важный момент. Металлический каркас теплицы и все металлические трубы должны быть заземлены, чтобы исключить поражение током при пробое изоляции. Это требование техники безопасности, которое нельзя игнорировать.</p>
+
+<blockquote>
+<p>⚠️ Внимание! Все работы по подключению электропитания проводите только при полностью обесточенной сети. Используйте диэлектрические инструменты и перчатки, чтобы избежать несчастных случаев.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Надежная система автоматизации требует не только качественных датчиков, но и грамотной защиты электроники от влаги, скачков напряжения и физического воздействия.</p></aside>
+
+<h2 id="программное-обеспечение-и-настройка-логики">Программное обеспечение и настройка логики</h2>
+<p>«Железо» — это только половина дела. Вторая половина — это код, который заставляет систему работать. Программирование на <em>C++</em> для Arduino или <em>MicroPython</em> для ESP позволяет реализовать сложные сценарии. Например, вы можете запрограммировать систему так, чтобы она открывала окно не сразу при достижении 25°C, а только если влажность воздуха ниже 40%.</p>
+<p>Используйте библиотеки для работы с датчиками, чтобы упростить код. Стандартные библиотеки от производителей (например, DHT для датчиков температуры) уже содержат откалиброванные алгоритмы. Это экономит время и снижает вероятность ошибок в расчетах. Важно настроить таймеры задержки: если датчик "скакнул" на секунду, система не должна реагировать мгновенно, чтобы избежать ложных срабатываний.</p>
+<p>Для удаленного управления часто используется протокол MQTT. Он позволяет отправлять данные на сервер и получать команды обратно с минимальной задержкой. Это идеально подходит для интеграции с платформами умного дома, такими как Home Assistant. Вы сможете видеть состояние теплицы на общем дашборде вместе с другими устройствами.</p>
+
+<details class="pb-accordion"><summary>Как реализовать логику гистерезиса?</summary><div class="pb-accordion-body"><p>Гистерезис предотвращает частое включение и выключение устройств. Если открыть окно при 25°C, то закроется оно только при 22-23°C. Это создает "мертвую зону", в которой привод не двигается, экономя ресурс механизмов.</p></div></details>
+
+<p>Не забывайте о резервном копировании прошивки. Если вы случайно загрузите некорректный код, вы потеряли возможность управлять теплицей. Сохраняйте рабочие версии кода на компьютере и используйте комментарии, чтобы не запутаться в собственных настройках через полгода.</p>
+
+<h2 id="тестирование-и-эксплуатация-системы">Тестирование и эксплуатация системы</h2>
+<p>После сборки системы не спешите запускать её на полную мощность. Проведите поэтапное тестирование каждого узла. Сначала проверьте работу контроллера без нагрузки, затем подключите отдельные реле и сервоприводы. Убедитесь, что окна открываются и закрываются плавно, а насос подает воду точно в те места, где установлены датчики.</p>
+<p>В процессе эксплуатации регулярно проверяйте состояние датчиков. Земля может забить контакты, а насекомые — залететь в корпус. Чистота и аккуратность — залог долгой службы. Раз в сезон проводите полную ревизию проводки и соединений.</p>
+<p>Автоматизация теплицы — это инвестиция в ваше время и урожай. Правильно настроенная система станет надежным помощником, который обеспечит оптимальные условия для роста растений.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Первый сезон эксплуатации ведите дневник: записывайте настройки системы и параметры роста растений. Это поможет вам точно настроить пороги срабатывания для следующего сезона.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+  <summary>Какие датчики температуры самые точные?</summary>
+  <p>Для бытовых задач отлично подходят датчики серии DHT22 (AM2302), которые имеют погрешность ±0.5°C. Если нужна высокая точность, используйте DS18B20 с герметичным корпусом, он устойчив к влаге и имеет точность до 0.1°C.</p>
+</details>
+
+<details>
+  <summary>Можно ли сделать автоматическую теплицу без программирования?</summary>
+  <p>Да, существуют готовые термовыключатели и гидравлические приводы, которые работают по физическим принципам без электричества. Однако для сложной логики (полив в зависимости от влажности + проветривание) программируемый контроллер необходим.</p>
+</details>
+
+<details>
+  <summary>Как защитить электронику от влаги в теплице?</summary>
+  <p>Используйте влагозащищенные корпуса (степень защиты IP65 и выше), гермовводы для проводов и силиконовые заглушки. Платы можно покрыть специальным лаком для защиты от коррозии.</p>
+</details>
+
+<details>
+  <summary>Нужно ли заземление для системы автоматизации?</summary>
+  <p>Да, обязательно. Теплица часто представляет собой металлический каркас, который может стать проводником при утечке тока. Заземление защитит вас и оборудование.</p>
+</details>
+
+<details>
+  <summary>Какой насос лучше выбрать для капельного полива?</summary>
+  <p>Для небольших теплиц подходят мембранные или вибрационные насосы на 12В. Они тихие, экономичные и легко управляются реле. Для больших объемов используйте центробежные насосы с прессконтролем.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zarodyshi-ogurtsov-ne-rastut-v-teplitse-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Огурцы не завязываются в теплице: причины и способы решения</span>
+                <span class="pb-related-desc">Зародыши огурцов желтеют и опадают? Узнайте основные причины сброса завязей в теплице и эффективные </span>
+            </a><a href="/articles/p/po/pochemu-zhelteyut-listya-u-baklazhan-v-teplitse-i-chto-delat-video.html" class="pb-related-card">
+                <span class="pb-related-title">Желтеют листья у баклажан в теплице: причины, лечение и видео-инструкция</span>
+                <span class="pb-related-desc">Узнайте, почему желтеют листья у баклажанов в теплице. Разбор болезней, вредителей и ошибок ухода. П</span>
+            </a><a href="/articles/k/ka/kak-opylyayutsya-ovoshchi-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Опыление овощей в теплице: методы, ошибки и секреты</span>
+                <span class="pb-related-desc">Как правильно опылять огурцы, томаты и перцы в теплице. Ручное опыление, использование шмелей и вент</span>
+            </a><a href="/articles/c/ch/chem-udobryayut-orkhidei-v-teplitsakh.html" class="pb-related-card">
+                <span class="pb-related-title">Чем удобряют орхидеи в теплицах: схемы и препараты</span>
+                <span class="pb-related-desc">Профессиональная схема подкормки орхидей в теплицах. Виды удобрений, макро- и микроэлементы, график </span>
+            </a><a href="/articles/c/ch/chto-mozhno-posadit-vokrug-teplitsy-iz-polikarbonata-snaruzhi-foto.html" class="pb-related-card">
+                <span class="pb-related-title">Что посадить вокруг теплицы из поликарбоната: фото, схемы и советы</span>
+                <span class="pb-related-desc">Разбираем, какие растения можно посадить снаружи теплицы. Обзор декоративных и полезных культур, схе</span>
+            </a><a href="/articles/p/pr/prey-teplitsa-kak-spasti-lyudej.html" class="pb-related-card">
+                <span class="pb-related-title">Как спасти людей в теплице Prey: Экстренный алгоритм действий</span>
+                <span class="pb-related-desc">Пошаговая инструкция по спасению людей в инциденте с теплицей в игре Prey. Механики, слоты и тактика</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

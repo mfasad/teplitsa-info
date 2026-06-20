@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как автоматизировать теплицы в Farming Simulator 22: модами и методами — Теплица Инфо</title>
+    <meta name="description" content="Пошаговое руководство по автоматизации ухода за растениями в FS22. Обзор модов, логистика, настройка дронов и контроль климата для максимального урожая.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-avtomatizirovat-teplitsy-fs22.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как автоматизировать теплицы в Farming Simulator 22: модами и методами">
+    <meta property="og:description" content="Пошаговое руководство по автоматизации ухода за растениями в FS22. Обзор модов, логистика, настройка дронов и контроль климата для максимального урожая.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/instrumenty-i-oborudovanie/">Инструменты и оборудование</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как автоматизировать теплицы в Farming Simulator 22: модами и методами</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#выбор-правильных-модификаций-для-автоматизации">Выбор правильных модификаций для автоматизации</a></li><li><a href="#настройка-системы-полива-и-контроля-климата">Настройка системы полива и контроля климата</a></li><li><a href="#логистика-удобрений-и-подготовки-почвы">Логистика удобрений и подготовки почвы</a></li><li><a href="#автоматизация-сбора-и-транспортировки-урожая">Автоматизация сбора и транспортировки урожая</a></li><li><a href="#таблица-совместимости-модов-и-оборудования">Таблица совместимости модов и оборудования</a></li><li><a href="#оптимизация-производительности-и-устранение-ошибок">Оптимизация производительности и устранение ошибок</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-v-ekaterinburge-kupit-malenkuyu-teplitsu.html">Где купить маленькую теплицу в Екатеринбурге: адреса и цены</a></li><li><a href="/articles/k/ka/kak-postavit-termoprivod-v-teplitsu.html">Как поставить термопривод в теплицу: пошаговая инструкция</a></li><li><a href="/articles/e/es/esli-net-vozmozhnosti-otkryvat-teplitsu-kazhdyj-den-chto-delat.html">Автопроветривание теплицы: решение для дачников выходного дня</a></li><li><a href="/articles/c/ch/chem-osveshchayut-teplitsy.html">Чем освещают теплицы: выбор ламп и нормы досветки</a></li><li><a href="/articles/c/ch/chto-zalit-v-termoprivod-dlya-teplitsy.html">Что залить в термопривод для теплицы: масло, вода или спирт?</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полное руководство по автоматизации теплиц в Farming Simulator 22</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#выбор-правильных-модификаций-для-автоматизации">Выбор правильных модификаций для автоматизации</a></li><li><a href="#настройка-системы-полива-и-контроля-климата">Настройка системы полива и контроля климата</a></li><li><a href="#логистика-удобрений-и-подготовки-почвы">Логистика удобрений и подготовки почвы</a></li><li><a href="#автоматизация-сбора-и-транспортировки-урожая">Автоматизация сбора и транспортировки урожая</a></li><li><a href="#таблица-совместимости-модов-и-оборудования">Таблица совместимости модов и оборудования</a></li><li><a href="#оптимизация-производительности-и-устранение-ошибок">Оптимизация производительности и устранение ошибок</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Фермерство в <em>Farming Simulator 22</em> быстро перерастает из простого выращивания культур в сложную логистическую задачу, особенно когда речь заходит о <strong>теплицах</strong>. Ручной сбор урожая, постоянный контроль уровня влаги и необходимость вручную доставлять удобрения превращают игру в рутину, отнимающую время у глобального планирования. Именно здесь на сцену выходит автоматизация, позволяющая превратить крошечную грядку в безупречно работающий механизм.</p>
+
+<p>Современные модификации и встроенные инструменты дают игроку возможность делегировать рутинные процессы искусственному интеллекту или скриптам. Вы можете настроить систему так, чтобы она сама справлялась с <strong>посадкой</strong>, уходом и сбором, освобождая вас для управления другими аспектами хозяйства. Однако эффективность такой системы напрямую зависит от правильного выбора инструментов и грамотной конфигурации рабочих зон.</p>
+
+<h2 id="выбор-правильных-модификаций-для-автоматизации">Выбор правильных модификаций для автоматизации</h2>
+
+<p>Основой любой автоматизированной системы в игре являются качественные модификации, так как стандартный функционал имеет существенные ограничения. Для начала вам необходимо установить <strong>FS22 ModHub</strong> и найти проверенные скрипты, которые добавят функции автономного управления. Без правильных дополнений вы не сможете реализовать полноценную цепочку работ без участия игрока.</p>
+
+<p>Особое внимание стоит уделить модам, добавляющим <em>автономных роботов</em> или улучшающим искусственный интеллект существующей техники. Например, моды типа <em>Autonomous Vehicles</em> позволяют машинам самостоятельно перемещаться между точками, избегая столкновений. Это критически важно для работы внутри замкненного пространства теплицы, где маневренность ограничена стенами и конструкциями.</p>
+
+<p>Существует несколько категорий модов, которые стоит рассмотреть для вашего хозяйства:</p>
+<ul>
+  <li>🤖 Скрипты автопилота для тракторов и прицепов, позволяющие задать точку возврата и зону работы.</li>
+  <li>🌱 Модификации удобрений и полива с функцией автоматического заполнения резервуаров.</li>
+  <li>🚁 Дроны для мониторинга состояния культур и ускоренного сбора урожая.</li>
+</ul>
+
+<p>Не забывайте проверять совместимость версий модов перед установкой, так как конфликт скриптов может привести к вылету игры или потере сохранений.</p>
+
+<div class="pb-poll" id="poll-83a9df1b"><div class="pb-poll-question">📊 Какую часть автоматизации вам сложнее всего настроить</div><div class="pb-poll-option" data-poll="83a9df1b" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полив и влажность</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="83a9df1b" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Сбор урожая</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="83a9df1b" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Логистика удобрений</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="83a9df1b" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Управление климатом</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройка-системы-полива-и-контроля-климата">Настройка системы полива и контроля климата</h2>
+
+<p>Теплицы в <em>Farming Simulator 22</em> требуют особого внимания к <strong>влажности</strong> и температуре, так как культурные растения в закрытом грунте чувствительны к изменениям среды. Ручной полив занимает слишком много времени и часто приводит к перерасходу ресурсов. Автоматизация этой сферы позволяет поддерживать идеальный микроклимат без вашего постоянного присутствия.</p>
+
+<p>Для реализации автоматического полива необходимо использовать <em>системы капельного орошения</em>, которые можно подключить к резервуарам с водой. Установите насосы и трубы так, чтобы вода подавалась точно под корень каждого растения. Это не только экономит воду, но и предотвращает образование луж, которые могут мешать движению другой техники.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Неправильная настройка давления в системе полива может привести к разрыву труб или неравномерному увлажнению грядок, что снизит итоговую урожайность.</p>
+</blockquote>
+
+<p>Контроль климата также можно автоматизировать, используя датчики температуры и влажности, если такие функции доступны в установленных модах. Встроенная вентиляция и отопление должны срабатывать при достижении определенных пороговых значений.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед запуском автополива проверьте уровень воды в резервуаре и убедитесь, что трубы не перекрываются движущейся техникой во время сбора урожая.</p></aside>
+
+<h2 id="логистика-удобрений-и-подготовки-почвы">Логистика удобрений и подготовки почвы</h2>
+
+<p>Подготовка почвы и внесение удобрений — это процессы, которые должны происходить строго по графику. В автоматизированной теплице важно, чтобы <strong>плодородие</strong> земли всегда находилось на пиковом уровне. Для этого вам понадобятся самозаправляющиеся прицепы и тракторы с функцией автопилота.</p>
+
+<p>Настройте маршрут так, чтобы техника выезжала из ангаров, заезжала в теплицу, проходила по грядкам с <em>удобрением</em> и возвращалась для дозаправки. Современные моды позволяют задавать сложные маршруты с обходом препятствий, что делает процесс максимально бесшовным. Важно учитывать ширину захвата орудий, чтобы не оставлять необработанных полос.</p>
+
+<p>Вот основные шаги для настройки логистики удобрений:</p>
+<ul>
+  <li>🚜 Определите точки дозаправки и установите рядом емкости с жидким или гранулированным удобрением.</li>
+  <li>📍 Настройте виртуальные пути для тракторов с учетом ширины орудий и минимального радиуса разворота.</li>
+  <li>🔄 Добавьте функцию повторения маршрута, чтобы техника работала циклически до полного завершения обработки.</li>
+</ul>
+
+<p>Использование <em>разбрасывателей</em> с широким захватом позволит сократить время обработки больших площадей теплицы. Однако следите за тем, чтобы химикаты не попадали на дорожки, так как это может повлиять на работу роботов-уборщиков.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед запуском авто-удобрения</h4><label class="check-item"><input type="checkbox"><span>Проверить уровень удобрения в баке</span></label><label class="check-item"><input type="checkbox"><span>Убедиться, что орудие опущено</span></label><label class="check-item"><input type="checkbox"><span>Проверить маршрут на пересечения</span></label><label class="check-item"><input type="checkbox"><span>Отключить тормоза на тракторе</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="автоматизация-сбора-и-транспортировки-урожая">Автоматизация сбора и транспортировки урожая</h2>
+
+<p>Самый прибыльный этап — это сбор урожая, который в теплицах можно полностью автоматизировать. Для этого используются <strong>комбайны</strong> с функцией автопилота или специальные роботы-сборщики, если они доступны в ваших модах. Главное условие — правильно спланировать проездную зону, чтобы техника могла свободно маневрировать.</p>
+
+<p>При настройке автопилота для уборки важно учитывать загрузку бункера. Настройте систему так, чтобы трактор с прицепом подъезжал к комбайну автоматически, когда тот заполняется. Это исключит простои техники и ускорит процесс сбора. <em>Логистика</em> здесь играет решающую роль: чем быстрее груз будет вывезен, тем быстрее освободится место для нового урожая.</p>
+
+<pre><code>route: теплица_зона_1 -> точка_разгрузки -> теплица_зона_2</code></pre>
+
+<p>Некоторые продвинутые моды позволяют настроить приоритетность сбора: сначала убираются самые спелые культуры, а затем остальные. Это помогает максимизировать прибыль, так как в игре качество урожая напрямую влияет на его стоимость.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если трактор застрянет в узком проходе теплицы, весь процесс автоматизации может встать, и вам придется вручную перемещать технику, что нарушит цикл работы.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Эффективная логистика сбора урожая требует четкого разделения зон движения уборочной техники и транспорта для вывоза продукции.</p></aside>
+
+<h2 id="таблица-совместимости-модов-и-оборудования">Таблица совместимости модов и оборудования</h2>
+
+<p>Чтобы автоматизация работала стабильно, необходимо подобрать совместимое оборудование и модификации. Ниже приведена таблица популярных решений, которые часто используются игроками для настройки теплиц.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Тип оборудования</th>
+      <th>Рекомендуемый мод</th>
+      <th>Функция</th>
+      <th>Сложность настройки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Автопилот трактора</td>
+      <td><em>FS22 Autopilot</em></td>
+      <td>Автономное движение по маршруту</td>
+      <td>Средняя</td>
+    </tr>
+    <tr>
+      <td>Робот-сборщик</td>
+      <td><em>Smart Farming Robots</em></td>
+      <td>Сбор урожая без участия игрока</td>
+      <td>Высокая</td>
+    </tr>
+    <tr>
+      <td>Система полива</td>
+      <td><em>Automated Irrigation</em></td>
+      <td>Контроль влажности и подачи воды</td>
+      <td>Низкая</td>
+    </tr>
+    <tr>
+      <td>Датчики климата</td>
+      <td><em>Climate Control Pro</em></td>
+      <td>Автоматическое управление отоплением</td>
+      <td>Средняя</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>При выборе модов обращайте внимание на отзывы сообщества и частоту обновлений разработчика. Устаревшие скрипты могут конфликтовать с новыми патчами игры и вызывать ошибки в работе теплицы. <strong>Совместимость</strong> — это ключ к беспроблемной игре.</p>
+
+<details class="pb-accordion"><summary>Что делать, если мод перестал работать после обновления игры?</summary><div class="pb-accordion-body"><p>Если мод перестал работать, попробуйте откатить версию игры или найти обновленную версию мода на официальных форумах. Часто разработчики выпускают патчи в течение нескольких дней после выхода обновления игры.</p></div></details>
+
+<h2 id="оптимизация-производительности-и-устранение-ошибок">Оптимизация производительности и устранение ошибок</h2>
+
+<p>Автоматизация теплицы — это сложный процесс, который может создать нагрузку на игровой движок, особенно если в одной теплице находится много активных объектов. Чтобы избежать <strong>лаггов</strong> и падения FPS, необходимо оптимизировать количество активных скриптов и объектов.</p>
+
+<p>Рекомендуется лимитировать количество одновременно работающих роботов и дронов в одной зоне. Если вы видите, что игра начинает тормозить, попробуйте уменьшить количество техники или разделить теплицу на несколько независимых зон с разными логическими контроллерами. Также стоит отключать визуальные эффекты частиц в настройках мода, если они не критичны для понимания процесса.</p>
+
+<p>Если после установки мода игра вылетает, проверьте целостность файлов и убедитесь, что нет конфликтов с другими скриптами. Часто проблема кроется в неправильной установке дополнительных библиотек, необходимых для работы автоматизации.</p>
+
+<p> Иногда игроку необходимо вмешаться в процесс, чтобы скорректировать маршрут или устранить непредвиденную ситуацию, которую ИИ не может решить самостоятельно.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Оптимизация количества активных скриптов и техники — залог стабильной работы игры при использовании сложных систем автоматизации.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+  <summary>Нужны ли платные моды для автоматизации теплиц?</summary>
+  <p>Нет, большинство эффективных скриптов для автоматизации доступны бесплатно в <em>ModHub</em> или на независимых платформах. Платные моды обычно предлагают уникальную технику, но не обязательны для базовой автоматизации.</p>
+</details>
+
+<details>
+  <summary>Можно ли автоматизировать теплицу без установки модов?</summary>
+  <p>Стандартный функционал игры не поддерживает полную автоматизацию теплиц. Вы можете использовать автопилот для перемещения техники, но без модов невозможно настроить автоматический полив, удобрение и сбор урожая в режиме реального времени.</p>
+</details>
+
+<details>
+  <summary>Как часто нужно обновлять моды для автоматизации?</summary>
+  <p>Моды следует обновлять сразу после выхода нового патча игры, чтобы избежать конфликтов. Также следите за обновлениями разработчиков, которые могут исправлять ошибки и добавлять новые функции.</p>
+</details>
+
+<details>
+  <summary>Влияет ли автоматизация на прибыль в игре?</summary>
+  <p>Да, автоматизация значительно повышает прибыль, так как позволяет максимизировать урожайность за счет своевременного ухода и сбора, а также освобождает время игрока для расширения бизнеса.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-v-ekaterinburge-kupit-malenkuyu-teplitsu.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить маленькую теплицу в Екатеринбурге: адреса и цены</span>
+                <span class="pb-related-desc">Полный гид по покупке мини-парников в Екатеринбурге. Обзоры рынков, садовых центров и производителей</span>
+            </a><a href="/articles/k/ka/kak-postavit-termoprivod-v-teplitsu.html" class="pb-related-card">
+                <span class="pb-related-title">Как поставить термопривод в теплицу: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по установке термопривода в теплицу. Выбор места, крепление створки, настройка хода п</span>
+            </a><a href="/articles/e/es/esli-net-vozmozhnosti-otkryvat-teplitsu-kazhdyj-den-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Автопроветривание теплицы: решение для дачников выходного дня</span>
+                <span class="pb-related-desc">Как ухаживать за теплицей, если нет возможности приезжать каждый день? Обзор систем автопроветривани</span>
+            </a><a href="/articles/c/ch/chem-osveshchayut-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Чем освещают теплицы: выбор ламп и нормы досветки</span>
+                <span class="pb-related-desc">Обзор типов ламп для теплиц: ДНаТ, LED, люминесцентные. Нормы освещенности, спектр и схемы размещени</span>
+            </a><a href="/articles/c/ch/chto-zalit-v-termoprivod-dlya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Что залить в термопривод для теплицы: масло, вода или спирт?</span>
+                <span class="pb-related-desc">Выбор жидкости для гидравлического термопривода: масло, вода или спирт. Инструкция по замене, откачк</span>
+            </a><a href="/articles/k/ka/kakie-lampy-luchshe-dlya-teplitsy-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Какие лампы лучше для теплицы: отзывы, сравнение и советы аграриев</span>
+                <span class="pb-related-desc">Честные отзывы о фитосветах: ДНаТ, LED, ЭСЛ. Сравнение эффективности, затрат и реального урожая. Узн</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

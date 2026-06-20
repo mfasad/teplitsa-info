@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как рассчитать отопление в теплице: формулы и нормы — Теплица Инфо</title>
+    <meta name="description" content="Подробный расчет мощности отопления для теплицы. Учет теплопотерь, выбор котла, типы систем и энергоэффективность.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-rasschitat-otoplenie-v-teplitse.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как рассчитать отопление в теплице: формулы и нормы">
+    <meta property="og:description" content="Подробный расчет мощности отопления для теплицы. Учет теплопотерь, выбор котла, типы систем и энергоэффективность.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/otoplenie-i-klimat/">Отопление и климат</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как рассчитать отопление в теплице: формулы и нормы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#базовые-параметры-для-теплового-расчета">Базовые параметры для теплового расчета</a></li><li><a href="#расчет-теплопотерь-через-ограждающие-конструкции">Расчет теплопотерь через ограждающие конструкции</a></li><li><a href="#вентиляция-и-инфильтрация-воздуха">Вентиляция и инфильтрация воздуха</a></li><li><a href="#выбор-типа-системы-отопления">Выбор типа системы отопления</a></li><li><a href="#расчет-мощности-котельного-оборудования">Расчет мощности котельного оборудования</a></li><li><a href="#автоматизация-и-энергоэффективность">Автоматизация и энергоэффективность</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skolko-gradusov-v-teplitse-iz-polikarbonata.html">Сколько градусов в теплице из поликарбоната: идеальный климат</a></li><li><a href="/articles/k/ka/kak-obogret-teplitsu-iz-polikarbonata-svechkoj.html">Обогрев теплицы свечой: мифы, реальность и безопасные методы</a></li><li><a href="/articles/k/ka/kak-ustanovit-burzhujku-v-teplitse-iz-polikarbonata.html">Как установить буржуйку в теплице из поликарбоната: полная инструкция</a></li><li><a href="/articles/k/ka/kak-sokhranit-teplo-v-teplitse-nochyu-s-pomoshchyu-svechi.html">Как сохранить тепло в теплице ночью: метод со свечой и безопасность</a></li><li><a href="/articles/k/ka/kakaya-moshchnost-otopleniya-dlya-teplitsy.html">Расчет мощности отопления для теплицы: формулы, нормы и ошибки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитать отопление в теплице: точные методы и формулы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#базовые-параметры-для-теплового-расчета">Базовые параметры для теплового расчета</a></li><li><a href="#расчет-теплопотерь-через-ограждающие-конструкции">Расчет теплопотерь через ограждающие конструкции</a></li><li><a href="#вентиляция-и-инфильтрация-воздуха">Вентиляция и инфильтрация воздуха</a></li><li><a href="#выбор-типа-системы-отопления">Выбор типа системы отопления</a></li><li><a href="#расчет-мощности-котельного-оборудования">Расчет мощности котельного оборудования</a></li><li><a href="#автоматизация-и-энергоэффективность">Автоматизация и энергоэффективность</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Качественное отопление является фундаментом для успешного круглогодичного выращивания овощей, особенно в условиях суровых зим. Ошибки на этапе проектирования системы обогрева могут привести не только к гибели урожая из-за переохлаждения, но и к колоссальным финансовым потерям от перерасхода энергоносителей. Правильный расчет позволяет подобрать оборудование оптимальной мощности, которое сможет поддерживать заданный температурный режим даже в самые лютые морозы.</p>
+
+<p>Процесс вычисления тепловой нагрузки требует учета множества переменных: от материала покрытия до розы ветров на участке. Многие начинающие агрономы полагаются на интуицию или советы соседей, что часто приводит к installation систем с недостаточным запасом мощности. В этой статье мы разберем профессиональный подход к инженерным расчетам, который поможет вам избежать фатальных ошибок и обеспечить растениям идеальный микроклимат.</p>
+
+<h2 id="базовые-параметры-для-теплового-расчета">Базовые параметры для теплового расчета</h2>
+
+<p>Первым шагом в проектировании является сбор исходных данных о самой конструкции. Вам необходимо точно знать <strong>объем отапливаемого помещения</strong>, так как именно он является ключевой величиной в большинстве формул. Измерьте длину, ширину и высоту вашей теплицы, учитывая все архитектурные особенности, такие как тамбуры или пристройки, которые также требуют обогрева.</p>
+
+<p>Критически важным фактором является коэффициент теплопередачи, который напрямую зависит от материала покрытия. Стекло, поликарбонат и полиэтиленовая пленка обладают совершенно разными свойствами теплоизоляции. Например, двойное остекление значительно эффективнее сохраняет тепло по сравнению с одинарным слоем пленки, что существенно снижает требуемую мощность котла.</p>
+
+<p>Также необходимо учесть климатические особенности вашего региона. Расчет всегда ведется по температуре наиболее холодной пятидневки, характерной для вашей местности. Если вы живете в зоне с сильными ветрами, теплопотери через ограждающие конструкции будут выше из-за конвекции, поэтому в формулы вводится специальный поправочный коэффициент на ветровую нагрузку.</p>
+
+<h2 id="расчет-теплопотерь-через-ограждающие-конструкции">Расчет теплопотерь через ограждающие конструкции</h2>
+
+<p>Основная формула для определения потерь тепла выглядит следующим образом: Q = S × (Tвн - Tнар) × U, где S — площадь поверхности, T — разница температур внутри и снаружи, а U — коэффициент теплопередачи материала. Для сложных конструкций, таких как арочные теплицы из <em>сотового поликарбоната</em>, площадь рассчитывается с учетом кривизны свода, что увеличивает общую поверхность теплообмена.</p>
+
+<p>Не стоит забывать про теплопотери через грунт. Хотя земля сама по себе является аккумулятором тепла, в зимний период она может отбирать значительное количество энергии, особенно если уровень грунтовых вод высок. Профессионалы рекомендуют закладывать в расчет дополнительно 10-15% мощности на компенсацию ухода тепла в почву, если не предусмотрена специальная гидроизоляция фундамента.</p>
+
+<blockquote>⚠️ Внимание: При расчете площади остекления обязательно вычитайте площадь дверных проемов и форточек, так как они часто выполняются из других материалов или имеют иное сопротивление теплопередаче.</blockquote>
+
+<p>Для точности вычислений используйте следующие ориентировочные коэффициенты теплопередачи (U) для популярных материалов:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Материал покрытия</th>
+<th>Толщина (мм)</th>
+<th>Коэффициент U (Вт/м²·°C)</th>
+<th>Примерное сопротивление (м²·°C/Вт)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Полиэтиленовая пленка (одинарная)</td>
+<td>0.15 - 0.2</td>
+<td>6.0 - 7.0</td>
+<td>0.14 - 0.16</td>
+</tr>
+<tr>
+<td>Сотовый поликарбонат</td>
+<td>4</td>
+<td>3.3 - 3.6</td>
+<td>0.28 - 0.30</td>
+</tr>
+<tr>
+<td>Сотовый поликарбонат</td>
+<td>8-10</td>
+<td>1.8 - 2.0</td>
+<td>0.50 - 0.55</td>
+</tr>
+<tr>
+<td>Стекло (одинарное)</td>
+<td>4</td>
+<td>5.0 - 5.8</td>
+<td>0.17 - 0.20</td>
+</tr>
+<tr>
+<td>Стеклопакет (двойной)</td>
+<td>24</td>
+<td>1.2 - 1.4</td>
+<td>0.70 - 0.80</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка исходных данных</h4><label class="check-item"><input type="checkbox"><span>Измерить длину, ширину и высоту теплицы</span></label><label class="check-item"><input type="checkbox"><span>Узнать минимальную зимнюю температуру в регионе</span></label><label class="check-item"><input type="checkbox"><span>Определить точный тип и толщину покрытия</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие тамбуров и их площадь</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="вентиляция-и-инфильтрация-воздуха">Вентиляция и инфильтрация воздуха</h2>
+
+<p>Помимо потерь через стены, значительная часть тепла уходит вместе с воздухом при вентиляции и через неплотности конструкции. Этот процесс называется инфильтрацией. В теплицах с интенсивным воздухообменом, необходимых для предотвращения грибковых заболеваний у томатов или огурцов, доля теплопотерь на нагрев приточного воздуха может достигать 30-40% от общей нагрузки.</p>
+
+<p>Расчет производится по формуле Qвент = V × n × ρ × c × (Tвн - Tнар), где V — объем помещения, n — кратность воздухообмена в час, ρ — плотность воздуха, а c — удельная теплоемкость. Для зимнего периода кратность воздухообмена обычно принимают равной 0.5-1.0, однако при выращивании влаголюбивых культур этот параметр может быть выше.</p>
+
+<p>Герметичность конструкции играет решающую роль. Старые деревянные рамы или изношенная пленка могут пропускать холодный воздух в объемах, многократно превышающих расчетные нормы. Если ваша теплица не обладает высокой герметичностью, необходимо увеличить расчетную мощность системы отопления на 15-20% для компенсации неконтролируемых сквозняков.</p>
+
+<div class="pb-poll" id="poll-8575b4a5"><div class="pb-poll-question">📊 Какой материал покрытия вашей теплицы?</div><div class="pb-poll-option" data-poll="8575b4a5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полиэтиленовая пленка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8575b4a5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Сотовый поликарбонат</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8575b4a5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Стекло</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8575b4a5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Агротекстиль</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8575b4a5" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинированный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="выбор-типа-системы-отопления">Выбор типа системы отопления</h2>
+
+<p>После определения общей тепловой нагрузки необходимо выбрать способ доставки тепла к растениям. Существует несколько основных типов систем, каждый из которых имеет свои особенности расчета и монтажа. Выбор зависит от доступности энергоносителей, бюджета и агротехнических требований культуры.</p>
+
+<p><strong>Водяное отопление</strong> считается наиболее стабильным и экономичным вариантом для капитальных сооружений. Оно позволяет использовать различные источники энергии: газ, твердое топливо, электричество или тепловые насосы. Расчет гидравлики такой системы требует учета длины труб, диаметра и количества радиаторов или регистров.</p>
+
+<p><strong>Воздушное отопление</strong> с помощью теплогенераторов обеспечивает быстрый прогрев помещения, но может создавать неравномерное распределение температур и сушить воздух. Такие системы часто оснащаются перфорированными полиэтиленовыми рукавами для равномерной подачи теплого воздуха вдоль всего периметра теплицы.</p>
+
+<p>Для обогрева почвы используются системы <em>подпочвенного обогрева</em>, где трубы укладываются непосредственно в грунт или под грядки. Это наиболее физиологичный способ для растений, позволяющий снизить температуру воздуха на несколько градусов без ущерба для развития корневой системы, что дает существенную экономию энергии.</p>
+
+<blockquote>⚠️ Внимание: При использовании электрических котлов проверьте выделенную мощность на участке. Часто лимитов в 15 кВт недостаточно для обогрева теплицы площадью более 50 м² в зимний период.</blockquote>
+
+<h2 id="расчет-мощности-котельного-оборудования">Расчет мощности котельного оборудования</h2>
+
+<p>Итоговая мощность котла должна покрывать все теплопотери с определенным запасом. Формула выглядит так: Pкотла = (Qогр + Qвент) × kзапаса, где kзапаса обычно принимается равным 1.1-1.2. Этот запас необходим для компенсации остывания теплоносителя в трубах, пиковых морозов и износа оборудования в процессе эксплуатации.</p>
+
+<p>При выборе твердотопливного котла важно учитывать не только мощность, но и объем топки, который определяет длительность работы на одной загрузке. Для теплиц критически важно поддерживать температуру круглосуточно, поэтому модели с длительным горением или автоматической подачей топлива (пеллетные котлы) являются предпочтительными.</p>
+
+<p>Если вы планируете использовать каскад из нескольких котлов меньшей мощности, это повысит надежность системы и позволит гибко регулировать теплоотдачу в зависимости от погоды. В межсезонье может работать только один котел, а в пик зимы включаются все агрегаты, что экономит ресурс оборудования.</p>
+
+<details class="pb-accordion"><summary>Формула расчета расхода топлива</summary><div class="pb-accordion-body"><p>Для предварительной оценки расходов можно использовать удельные показатели. Например, для природного газа расход составляет примерно 0.1 м³ на 1 кВт тепловой мощности в час. Для дизельного топлива — около 0.1 литра на 1 кВт в час. Умножив мощность вашего котла на эти коэффициенты и на количество часов работы, вы получите примерный объем потребления за сезон.</p></div></details>
+
+<h2 id="автоматизация-и-энергоэффективность">Автоматизация и энергоэффективность</h2>
+
+<p>Современные системы отопления теплиц не обходятся без автоматики. Использование терморегуляторов, погодозависимой автоматики и сервоприводов на клапанах позволяет поддерживать температуру с точностью до 0.5 градуса. Это не только комфортно для растений, но и предотвращает перетоп, который является главной статьей нерациональных расходов.</p>
+
+<p>Установка теплоаккумулятора (буферной емкости) особенно эффективна при использовании твердотопливных котлов и электричества по ночному тарифу. Бак большого объема накапливает избыточное тепло днем или ночью, а затем отдает его в систему отопления, когда котел не работает. Это позволяет сгладить температурные пики и сэкономить до 30% средств на энергоносителях.</p>
+
+<p>Регулярное обслуживание системы, включая удаление воздуха из радиаторов, проверку давления и очистку теплообменников, является обязательным условием эффективной работы. Забитая накипью система требует больше энергии для прогрева того же объема теплоносителя, что напрямую влияет на ваш бюджет.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Установите датчики температуры не только в воздухе, но и в зоне корней растений. Часто температура почвы отличается от температуры воздуха, и ориентация только на воздушные датчики может привести к стрессу у культур.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный расчет отопления — это баланс между достаточной мощностью для выживания растений в мороз и избыточностью, ведущей к финансовым потерям. Всегда закладывайте запас 10-20%.</p></aside>
+
+<blockquote>⚠️ Внимание: Тарифы на энергоносители и нормативы подключения могут меняться. Перед закупкой дорогостоящего оборудования сверьте актуальные технические условия и цены в местных ресурсоснабжающих организациях.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать обычные бытовые радиаторы для теплицы?</summary>
+<p>Технически это возможно, но не рекомендуется. Бытовые радиаторы (алюминиевые или биметаллические) рассчитаны на чистый теплоноситель и определенное давление. В тепличных условиях часто используется антифриз, который может быть агрессивен к материалам бытовых батарей. Кроме того, они занимают много места и могут быть повреждены при сельскохозяйственных работах. Лучше использовать специальные промышленные регистры или гладкие стальные трубы.</p>
+</details>
+
+<details>
+<summary>Какая минимальная температура должна поддерживаться в пустой теплице зимой?</summary>
+<p>Если теплица не используется зимой и просто консервируется, достаточно поддерживать температуру около +5°C. Это предотвратит промерзание грунта на большую глубину и защитит конструкцию от деформации из-за расширения льда в почве. Однако, если вы планируете раннюю весеннюю посадку, температуру лучше держать на уровне +10...+12°C для прогрева земли.</p>
+</details>
+
+<details>
+<summary>Как рассчитать количество секций радиатора?</summary>
+<p>Для грубого расчета принято считать, что одна стандартная секция алюминиевого радиатора высотой 500 мм отдает около 150-180 Вт тепла. Разделите общую теплопотерю помещения (в Ваттах) на 160, и вы получите необходимое количество секций. Однако для теплиц этот метод неточен из-за специфики теплоотдачи, поэтому лучше рассчитывать общую длину труб или площадь поверхности регистров.</p>
+</details>
+
+<details>
+<summary>Выгодно ли отапливать теплицу электричеством?</summary>
+<p>Отопление электричеством (ТЭНами, электрокотлами) является самым удобным в монтаже и управлении, но самым дорогим в эксплуатации при использовании дневного тарифа. Выгода возможна только при наличии ночного тарифа и использовании теплоаккумулятора, либо для теплиц малой площади (до 15-20 м²), где общие затраты невелики.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skolko-gradusov-v-teplitse-iz-polikarbonata.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько градусов в теплице из поликарбоната: идеальный климат</span>
+                <span class="pb-related-desc">Изучите нормы температуры в поликарбонатной теплице для томатов, огурцов и перцев. Узнайте, как избе</span>
+            </a><a href="/articles/k/ka/kak-obogret-teplitsu-iz-polikarbonata-svechkoj.html" class="pb-related-card">
+                <span class="pb-related-title">Обогрев теплицы свечой: мифы, реальность и безопасные методы</span>
+                <span class="pb-related-desc">Можно ли обогреть теплицу из поликарбоната свечой? Разбираем физический процесс, риски пожара и эффе</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-burzhujku-v-teplitse-iz-polikarbonata.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить буржуйку в теплице из поликарбоната: полная инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство по монтажу дровяной печи в теплице. Требования пожарной безопасности, схемы ды</span>
+            </a><a href="/articles/k/ka/kak-sokhranit-teplo-v-teplitse-nochyu-s-pomoshchyu-svechi.html" class="pb-related-card">
+                <span class="pb-related-title">Как сохранить тепло в теплице ночью: метод со свечой и безопасность</span>
+                <span class="pb-related-desc">Эффективные способы удержания тепла в теплице с помощью свечей. Инструкция по созданию безопасных те</span>
+            </a><a href="/articles/k/ka/kakaya-moshchnost-otopleniya-dlya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Расчет мощности отопления для теплицы: формулы, нормы и ошибки</span>
+                <span class="pb-related-desc">Как подобрать правильное отопление для теплицы: расчеты по кубатуре, типы котлов, нюансы для зимнего</span>
+            </a><a href="/articles/k/ka/kak-obychnuyu-teplitsu-sdelat-otaplivaemoj.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать отапливаемую теплицу своими руками: схемы и расчеты</span>
+                <span class="pb-related-desc">Подробная инструкция по переделке обычной теплицы в зимнюю. Выбор отопления, утепление, расчет мощно</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

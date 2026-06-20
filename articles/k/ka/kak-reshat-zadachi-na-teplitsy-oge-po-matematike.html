@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Задачи на теплицы ОГЭ по математике: разбор типов и решений — Теплица Инфо</title>
+    <meta name="description" content="Полное руководство по решению задач ОГЭ на теплицы. Разбор geometry, оптимизации, площади и объемных задач с примерами и алгоритмами.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-reshat-zadachi-na-teplitsy-oge-po-matematike.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Задачи на теплицы ОГЭ по математике: разбор типов и решений">
+    <meta property="og:description" content="Полное руководство по решению задач ОГЭ на теплицы. Разбор geometry, оптимизации, площади и объемных задач с примерами и алгоритмами.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/postrojka-i-konstruktsiya/">Постройка и конструкция</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Задачи на теплицы ОГЭ по математике: разбор типов и решений</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-геометрические-задачи-о-теплицах">Введение в геометрические задачи о теплицах</a></li><li><a href="#арочные-теплицы-и-дуги-окружности">Арочные теплицы и дуги окружности</a></li><li><a href="#расчет-площади-покрытия-и-пленки">Расчет площади покрытия и пленки</a></li><li><a href="#оптимизация-материала-и-стоимость">Оптимизация материала и стоимость</a></li><li><a href="#таблица-типовых-задач-огэ">Таблица типовых задач ОГЭ</a></li><li><a href="#работа-с-углами-и-наклонами-крыши">Работа с углами и наклонами крыши</a></li><li><a href="#типичные-ошибки-и-как-их-избежать">Типичные ошибки и как их избежать</a></li><li><a href="#инструменты-для-проверки-решений">Инструменты для проверки решений</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sdelat-dorozhki-v-teplitse-iz-polikarbonata.html">Дорожки в теплице из поликарбоната: лучшие материалы и схемы укладки</a></li><li><a href="/articles/k/ka/kak-pravilno-ustanovit-teplitsu-na-kirpichi.html">Как правильно установить теплицу на кирпичи: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kakie-razmery-teplitsy-samye-udobnye.html">Самые удобные размеры теплицы: выбор ширины, длины и высоты для огорода</a></li><li><a href="/articles/c/ch/chem-ubrat-rzhavchinu-s-teplitsy.html">Чем убрать ржавчину с теплицы: средства и методы защиты каркаса</a></li><li><a href="/articles/p/po/polikarbonat-kak-pravilno-vybrat-dlya-teplitsy.html">Как правильно выбрать поликарбонат для теплицы: толщина, плотность и светопропускание</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как решать задачи на теплицы: разбор ОГЭ по математике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-геометрические-задачи-о-теплицах">Введение в геометрические задачи о теплицах</a></li><li><a href="#арочные-теплицы-и-дуги-окружности">Арочные теплицы и дуги окружности</a></li><li><a href="#расчет-площади-покрытия-и-пленки">Расчет площади покрытия и пленки</a></li><li><a href="#оптимизация-материала-и-стоимость">Оптимизация материала и стоимость</a></li><li><a href="#таблица-типовых-задач-огэ">Таблица типовых задач ОГЭ</a></li><li><a href="#работа-с-углами-и-наклонами-крыши">Работа с углами и наклонами крыши</a></li><li><a href="#типичные-ошибки-и-как-их-избежать">Типичные ошибки и как их избежать</a></li><li><a href="#инструменты-для-проверки-решений">Инструменты для проверки решений</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-геометрические-задачи-о-теплицах">Введение в геометрические задачи о теплицах</h2>
+<p>Задачи на тему теплиц в рамках экзамена ОГЭ по математике часто вызывают затруднения у выпускников, так как требуют не только знания формул, но и умения переводить текстовую информацию в геометрические модели. Обычно такие задания относятся к части с развернутым ответом (задание №24 или №26 в зависимости от года и варианта), где необходимо найти площадь, объем или длину материала.</p>
+<p>Вам нужно уметь визуализировать конструкцию: арочная теплица — это часть цилиндра, а пленочные стены часто образуют прямоугольные треугольники или трапеции. Понимание реального устройства конструкций помогает выбрать правильную тригонометрическую функцию или формулу площади.</p>
+<p><strong>Геометрические тела</strong>, такие как <strong>цилиндр</strong>, <strong>конус</strong> или <strong>призма</strong>, лежат в основе большинства таких задач. Если вы научитесь быстро определять, какая фигура скрыта за описанием "арочный свод" или "свес крыши", решение задачи ускорится в разы.</p>
+
+<h2 id="арочные-теплицы-и-дуги-окружности">Арочные теплицы и дуги окружности</h2>
+<p>Самый распространенный тип задачи связан с определением длины дуги для арочной теплицы. Обычно в условии дана ширина основания и высота в самой высокой точке (стрела прогиба). Вам необходимо найти длину металлического профиля, который пойдет на создание каркаса.</p>
+<p>Для решения такой задачи часто используется свойство хорды и отрезка. Если теплица полукруглая, то высота равна радиусу. Однако в реальных задачах высота может быть меньше радиуса, и тогда применяется теорема Пифагора для нахождения радиуса окружности.</p>
+<p>Рассмотрим классический случай: ширина пролета 2 метра, высота 2 метра. Это сразу говорит о том, что радиус окружности равен 1 метру, а дуга составляет ровно полокружности. Вам нужно вспомнить формулу длины окружности <code>C = 2πR</code> и разделить её пополам.</p>
+<p>В более сложных вариантах высота не равна радиусу. Обозначьте радиус как <code>R</code>, а половину ширины как <code>a</code>. Тогда высота <code>h = R - \sqrt{R^2 - a^2}</code>. Решая это уравнение относительно <code>R</code>, вы получите радиус, необходимый для расчета длины дуги.</p>
+<p><mark>Обратите внимание: в задачах ОГЭ часто требуется округлить ответ до десятых, но промежуточные вычисления лучше вести с точностью до сотых или использовать значение π = 3,14.</mark></p>
+
+<h2 id="расчет-площади-покрытия-и-пленки">Расчет площади покрытия и пленки</h2>
+<p>Вторая по популярности группа задач касается определения площади материала, необходимого для обтяжки теплицы. Здесь важно понимать, что площадь поверхности включает боковые стенки и свод, но часто исключает торцевые двери или окна, если это указано в условии.</p>
+<p>Если теплица имеет форму прямой призмы с полукруглым основанием, вам нужно найти площадь боковой поверхности цилиндра (половину полной площади) и добавить площади прямоугольных торцевых стен (если они не арочные). Формула площади боковой поверхности цилиндра — <code>S = 2πRh</code>, где <code>h</code> — длина теплицы.</p>
+<p>Важно учитывать нахлест пленки. В реальных условиях, и часто в задачах, к общей площади добавляют определенный процент (обычно 5-10%) на стыки и крепление. Не упускайте этот нюанс, так как именно он часто становится причиной ошибки на экзамене.</p>
+<p><strong>Площадь поверхности</strong> — это ключевое понятие здесь. Разбейте сложную фигуру на простые части: прямоугольник для основания стен и полукруг для крыши. Сложите площади этих фигур и умножьте на длину конструкции.</p>
+<blockquote>⚠️ Внимание: Часто в задачах забывают добавить площадь торцевых стенок, если они тоже покрыты пленкой, или наоборот, включают площадь пола, который на самом деле застелен грунтом.</blockquote>
+
+<div class="pb-poll" id="poll-33718307"><div class="pb-poll-question">📊 Какой тип теплицы чаще встречается в ваших задачах?</div><div class="pb-poll-option" data-poll="33718307" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полностью арочная</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="33718307" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Призматическая с аркой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="33718307" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Классическая двускатная</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="33718307" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Сложная составная фигура</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="оптимизация-материала-и-стоимость">Оптимизация материала и стоимость</h2>
+<p>Задачи на оптимизацию требуют найти минимальную длину профиля или минимальную стоимость строительства при заданных ограничениях. Это уже алгебраический подход, где нужно выразить одну переменную через другую и найти экстремум функции.</p>
+<p>Представьте, что у вас есть фиксированный объем теплицы, и вы должны подобрать размеры так, чтобы площадь поверхности (и, следовательно, стоимость пленки) была минимальной. Вам нужно записать формулу площади через одну переменную, например, через радиус, и проанализировать её поведение.</p>
+<p>Иногда задача сводится к сравнительному анализу: какая теплица дешевле при одинаковом объеме? Для этого рассчитайте стоимость материалов для каждой конфигурации. Используйте формулы площади для каждой части конструкции.</p>
+<p><strong>Экономическая эффективность</strong> в таких задачах напрямую зависит от геометрии. Часто оказывается, что полукруглая форма экономичнее прямоугольной при том же объеме, так как у неё меньше площадь поверхности на единицу объема.</p>
+<blockquote>⚠️ Внимание: При расчете стоимости не забудьте умножить площадь покрытия на цену за квадратный метр, а длину профиля — на цену за погонный метр. Ошибка в единицах измерения (метры против сантиметров) — частая ловушка.</blockquote>
+
+<h2 id="таблица-типовых-задач-огэ">Таблица типовых задач ОГЭ</h2>
+<p>Для удобства запоминания типовых сценариев, мы составили сводную таблицу. Она поможет быстро определить, какую формулу применять, исходя из описания конструкции в условии экзамена.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип задачи</th>
+<th>Геометрическая фигура</th>
+<th>Что нужно найти</th>
+<th>Ключевая формула</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Длина дуги</td>
+<td>Полукруг или сегмент</td>
+<td>Длина профиля</td>
+<td><code>L = πR</code> или <code>L = (πRα)/180</code></td>
+</tr>
+<tr>
+<td>Площадь покрытия</td>
+<td>Полцилиндр + стены</td>
+<td>Площадь пленки</td>
+<td><code>S = πRh + 2S_стены</code></td>
+</tr>
+<tr>
+<td>Объем воздуха</td>
+<td>Призма с круговым основанием</td>
+<td>Объем</td>
+<td><code>V = (πR²/2) * H</code></td>
+</tr>
+<tr>
+<td>Угол наклона</td>
+<td>Прямоугольный треугольник</td>
+<td>Угол крыши</td>
+<td><code>tg(α) = катет/катет</code></td>
+</tr>
+<tr>
+<td>Стоимость</td>
+<td>Комплексная</td>
+<td>Бюджет</td>
+<td><code>C = P_пленки <em> S + P_профиля </em> L</code></td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="работа-с-углами-и-наклонами-крыши">Работа с углами и наклонами крыши</h2>
+<p>В двускатных теплицах или теплицах с односкатной крышей ключевую роль играет угол наклона. Задачи часто требуют найти длину стропила или высоту конька, зная ширину пролета и угол наклона.</p>
+<p>Здесь незаменима тригонометрия. Если известна ширина пролета и угол наклона к горизонту, вы можете найти длину стропила через косинус: <code>cos(α) = (ширина/2) / стропило</code>. Это базовое отношение для прямоугольного треугольника.</p>
+<p>Иногда в условии дается высота конька и ширина, а требуется найти угол. В этом случае используйте тангенс: <code>tg(α) = высота / (ширина/2)</code>. Не забывайте переводить градусы в радианы, если формула требует этого, но для ОГЭ обычно достаточно работы с градусами.</p>
+<p> Это универсальный инструмент для решения любых задач на крыши и скаты.</p>
+<blockquote>⚠️ Внимание: Внимательно читайте, какой именно угол дан — угол между скатом и горизонтом или угол между двумя скатами. Если дан угол между скатами, вам нужно разделить его пополам для решения треугольника.</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм решения задачи на теплицу</h4><label class="check-item"><input type="checkbox"><span>Внимательно прочитайте условие и нарисуйте схему</span></label><label class="check-item"><input type="checkbox"><span>Определите геометрические фигуры в конструкции</span></label><label class="check-item"><input type="checkbox"><span>Выпишите известные величины в метрах</span></label><label class="check-item"><input type="checkbox"><span>Выберите нужную формулу площади или объема</span></label><label class="check-item"><input type="checkbox"><span>Учтите нахлест или запас материала</span></label><label class="check-item"><input type="checkbox"><span>Вычислите и округлите ответ по правилам</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<details class="pb-accordion"><summary>Почему важно рисовать чертеж?</summary><div class="pb-accordion-body"><p>Без чертежа легко запутаться в обозначениях. На схеме сразу видно, где радиус, а где хорда, и какие части фигуры нужно складывать. Эскиз превращает абстрактный текст в наглядную геометрическую задачу.</p></div></details>
+
+<h2 id="типичные-ошибки-и-как-их-избежать">Типичные ошибки и как их избежать</h2>
+<p>Самая частая ошибка — невнимательное отношение к единицам измерения. В задаче ширина может быть дана в сантиметрах, а цена пленки — за квадратный метр. Это приводит к ошибке в два-три порядка, если не перевести сантиметры в метры сразу.</p>
+<p>Другая проблема — игнорирование толщины профиля. В простых школьных задачах этим часто пренебрегают, но иногда в усложненных вариантах требуется учесть, что профиль имеет ширину, и это влияет на внутренний объем или длину дуги.</p>
+<p>Не путайте площадь основания с площадью боковой поверхности. Если спрашивают "сколько земли нужно", считается площадь пола (длина × ширина). Если "сколько пленки", считается площадь покрытия (свод + стены). Перепутать эти величины — значит потерять баллы.</p>
+<p><strong>Внимательность к деталям</strong> — ваш главный союзник. Всегда перечитывайте вопрос задачи в конце: "Найдите длину профиля" или "Найдите площадь покрытия". Ответы на эти вопросы могут кардинально отличаться.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед тем как писать решение, выпишите все данные в одну колонку, переведя их в метры. Так вы избежите путаницы с сантиметрами и квадратными метрами при вычислениях.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная мысль: Любую задачу про теплицу можно разбить на сумму простых фигур (прямоугольников, треугольников, полукругов), решить каждую отдельно и сложить результаты.</p></aside>
+
+<h2 id="инструменты-для-проверки-решений">Инструменты для проверки решений</h2>
+<p>При подготовке к ОГЭ полезно использовать специализированные сборники задач, где встречаются именно такие прикладные задачи. Регулярная практика поможет вам выработать интуицию на то, какая формула подходит к той или иной конструкции.</p>
+<p>Также стоит обратить внимание на визуализацию. Используйте пластиковые модели или даже картонные макеты, чтобы понять, как устроена арка или скат. Это поможет лучше запомнить формулы и понять их смысл, а не просто зазубривать.</p>
+<p>Решайте задачи из открытых банков заданий ФИПИ. Именно оттуда берются оригинальные формулировки экзаменационных вариантов. Там вы найдете все возможные вариации задач на теплицы, от простых подсчетов до сложных оптимизаций.</p>
+<p>Используйте <strong>геометрические калькуляторы</strong> для проверки своих расчетов, но только после того, как решили задачу самостоятельно. Это поможет убедиться в правильности вычислений, но не заменит понимания логики решения.</p>
+
+<details>
+<summary>Как найти радиус арки, если известны ширина и высота?</summary>
+<p>Чтобы найти радиус <code>R</code>, используйте формулу, выводимую из теоремы Пифагора: <code>R = (h^2 + (w/2)^2) / (2h)</code>, где <code>h</code> — высота арки, а <code>w</code> — ширина пролета. Подставьте значения и получите радиус, необходимый для расчета длины дуги.</p>
+</details>
+
+<details>
+<summary>Что делать, если в задаче дана длина дуги, а нужно найти ширину?</summary>
+<p>Это обратная задача. Если дуга составляет полукруг, то длина дуги <code>L = πR</code>, откуда <code>R = L/π</code>, а ширина будет <code>2R</code>. Если дуга не полукруг, придется решать уравнение с использованием угла или стрелы прогиба, что может потребовать приближенных методов или таблиц.</p>
+</details>
+
+<details>
+<summary>Как учесть нахлест пленки в расчетах?</summary>
+<p>Если в условии сказано, что на нахлест требуется, например, 10% материала, умножьте полученную площадь покрытия на коэффициент 1,10. Не добавляйте 10% к длине, а именно к площади, так как пленка раскладывается поверх всей поверхности.</p>
+</details>
+
+<details>
+<summary>Нужно ли учитывать толщину металла в задачах?</summary>
+<p>В стандартных задачах ОГЭ толщиной металла обычно пренебрегают, считая профиль идеальной линией. Однако, если в условии явно указано "учтите толщину профиля 2 см", то размеры внутреннего пространства будут меньше внешних размеров на удвоенную толщину профиля.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sdelat-dorozhki-v-teplitse-iz-polikarbonata.html" class="pb-related-card">
+                <span class="pb-related-title">Дорожки в теплице из поликарбоната: лучшие материалы и схемы укладки</span>
+                <span class="pb-related-desc">Полная инструкция по обустройству дорожек в теплице: выбор материалов от гравия до плитки, расчет ши</span>
+            </a><a href="/articles/k/ka/kak-pravilno-ustanovit-teplitsu-na-kirpichi.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно установить теплицу на кирпичи: пошаговая инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство по надежному монтажу теплицы на кирпичный фундамент. Советы по гидроизоляции, </span>
+            </a><a href="/articles/k/ka/kakie-razmery-teplitsy-samye-udobnye.html" class="pb-related-card">
+                <span class="pb-related-title">Самые удобные размеры теплицы: выбор ширины, длины и высоты для огорода</span>
+                <span class="pb-related-desc">Как выбрать идеальные размеры теплицы для участка. Расчет ширины, высоты и длины для удобного ухода </span>
+            </a><a href="/articles/c/ch/chem-ubrat-rzhavchinu-s-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Чем убрать ржавчину с теплицы: средства и методы защиты каркаса</span>
+                <span class="pb-related-desc">Подробный гид по удалению коррозии с теплицы: механическая зачистка, химические преобразователи, нар</span>
+            </a><a href="/articles/p/po/polikarbonat-kak-pravilno-vybrat-dlya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно выбрать поликарбонат для теплицы: толщина, плотность и светопропускание</span>
+                <span class="pb-related-desc">Полный гайд по выбору сотового поликарбоната для теплицы. Разбор толщины, плотности, УФ-защиты и хит</span>
+            </a><a href="/articles/c/ch/chem-zakleit-polikarbonat-na-teplitse-posle-grada.html" class="pb-related-card">
+                <span class="pb-related-title">Чем заклеить поликарбонат на теплице после града: лучшие методы и материалы</span>
+                <span class="pb-related-desc">Экспертное руководство по ремонту теплицы: чем заклеить поликарбонат после града, выбор клея, гермет</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

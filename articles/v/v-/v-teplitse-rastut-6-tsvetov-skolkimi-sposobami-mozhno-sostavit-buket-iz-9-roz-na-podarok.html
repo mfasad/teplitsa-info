@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Комбинаторика в теплице: сколько букетов из 9 роз составить из 6 сортов — Теплица Инфо</title>
+    <meta name="description" content="Подробный разбор задачи: в теплице 6 сортов цветов, сколько способов составить букет из 9 роз. Формулы, таблицы и примеры для садоводов.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/v/v-/v-teplitse-rastut-6-tsvetov-skolkimi-sposobami-mozhno-sostavit-buket-iz-9-roz-na-podarok.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Комбинаторика в теплице: сколько букетов из 9 роз составить из 6 сортов">
+    <meta property="og:description" content="Подробный разбор задачи: в теплице 6 сортов цветов, сколько способов составить букет из 9 роз. Формулы, таблицы и примеры для садоводов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/sorta-i-vybor-rastenij/">Сорта и выбор растений</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Комбинаторика в теплице: сколько букетов из 9 роз составить из 6 сортов</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#постановка-задачи-и-условия-выращивания">Постановка задачи и условия выращивания</a></li><li><a href="#математический-аппарат-сочетания-с-повторениями">Математический аппарат: сочетания с повторениями</a></li><li><a href="#сценарий-с-ограниченным-запасом-сортов">Сценарий с ограниченным запасом сортов</a></li><li><a href="#влияние-сезонности-на-ассортимент-букетов">Влияние сезонности на ассортимент букетов</a></li><li><a href="#практическое-применение-комбинаторики-в-продажах">Практическое применение комбинаторики в продажах</a></li><li><a href="#ошибки-при-планировании-посадок-в-теплице">Ошибки при планировании посадок в теплице</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-kabachki-rastut-grushevidnoj-formy-v-teplitse.html">Почему кабачки растут грушевидной формы в теплице: причины и решение</a></li><li><a href="/articles/k/ka/kakie-luchshe-sazhat-ogurtsy-v-teplitse-dlya-konservirovaniya.html">Лучшие сорта огурцов для теплицы: топовые варианты для консервации</a></li><li><a href="/articles/t/ty/tyulpan-teplitsy-kto-prodaet.html">Где купить тюльпаны для теплиц: поставщики, оптовики и производители</a></li><li><a href="/articles/k/ka/kak-zamanit-pchel-v-teplitsu-s-ogurtsami.html">Как заманить пчел в теплицу с огурцами: проверенные методы опыления</a></li><li><a href="/articles/k/ka/kak-vyrashchivat-pomidory-sprut-v-teplitse.html">Выращивание томата Спрут в теплице: полное руководство по гиганту</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Сколько букетов из 9 роз можно составить, если в теплице растут 6 сортов цветов?</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#постановка-задачи-и-условия-выращивания">Постановка задачи и условия выращивания</a></li><li><a href="#математический-аппарат-сочетания-с-повторениями">Математический аппарат: сочетания с повторениями</a></li><li><a href="#сценарий-с-ограниченным-запасом-сортов">Сценарий с ограниченным запасом сортов</a></li><li><a href="#влияние-сезонности-на-ассортимент-букетов">Влияние сезонности на ассортимент букетов</a></li><li><a href="#практическое-применение-комбинаторики-в-продажах">Практическое применение комбинаторики в продажах</a></li><li><a href="#ошибки-при-планировании-посадок-в-теплице">Ошибки при планировании посадок в теплице</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие владельцы приусадебных участков и профессиональные цветоводы часто сталкиваются не только с агрономическими задачами, но и с необходимостью планирования ассортимента для продажи. Ситуация, когда <strong>в теплице растут 6 видов цветов</strong>, а заказчику требуется сформировать конкретный ассортимент, например, <strong>букет из 9 роз</strong>, ставит перед нами классическую математическую задачу. Однако за сухими цифрами скрывается реальная логистика тепличного хозяйства.</p>
+
+<p>Понимание того, сколькими способами можно собрать композицию, помогает оптимизировать посадки и предсказать спрос. Если вы выращиваете шесть различных сортов роз, важно знать, насколько разнообразным может быть ваш конечный продукт. Это знание влияет на маркетинговую стратегию и планирование площадей под посадку.</p>
+
+<p>В этой статье мы детально разберем математическую модель решения данной задачи, применив её к реальным условиям тепличного выращивания. Мы рассмотрим различные сценарии: от строгих ограничений до полной свободы выбора, чтобы вы могли адаптировать полученные знания под свои бизнес-процессы.</p>
+
+<h2 id="постановка-задачи-и-условия-выращивания">Постановка задачи и условия выращивания</h2>
+
+<p>Представим, что ваша <em>теплица</em> оборудована всем необходимым для культивации шести различных сортов роз. Это могут быть популярные сорта вроде <code>Grand Gala</code>, <code>Freedom</code> или более экзотические варианты. Условие задачи гласит: нужно составить букет, состоящий ровно из 9 стеблей. При этом порядок цветов в букете не имеет значения, важен только количественный состав сортов.</p>
+
+<p>Ключевым моментом здесь является допущение о достаточном количестве срезки. Мы предполагаем, что каждого из 6 сортов в теплице имеется более 9 стеблей. Это позволяет нам использовать формулы сочетаний с повторениями, не worrying о том, что какой-то сорт закончился в процессе сборки заказа.</p>
+
+<p>Если же количество цветов ограничено (например, какого-то сорта всего 2 штуки), задача усложняется и требует использования производящих функций или метода включения-исключения. Но для базового планирования ассортимента мы будем исходить из условия неограниченного выбора.</p>
+
+<blockquote>
+<p>⚠️ Внимание: В реальной практике количество доступных стеблей всегда ограничено сезоном и площадью посадки. Математический расчет дает теоретический максимум вариантов, который может быть недостижим в пик сезона или при плохом урожае конкретного сорта.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда оставляйте 10-15% цветов каждого сорта в качестве страхового запаса на случай повреждения при срезке или транспортировке, чтобы не сорвать выполнение крупных заказов.</p></aside>
+
+<h2 id="математический-аппарат-сочетания-с-повторениями">Математический аппарат: сочетания с повторениями</h2>
+
+<p>Для решения вопроса о том, сколькими способами можно составить букет, нам необходимо обратиться к разделу комбинаторики, изучающему <strong>сочетания с повторениями</strong>. Поскольку мы выбираем 9 элементов (роз) из 6 типов (сортов), и порядок выбора не важен, а элементы могут повторяться, используется специальная формула.</p>
+
+<p>Формула числа сочетаний с повторениями из <em>n</em> элементов по <em>k</em> выглядит следующим образом: <code>C(n+k-1, k)</code>. В нашем контексте <em>n</em> — это количество сортов (6), а <em>k</em> — количество цветов в букете (9). Подставив значения, мы получаем выражение <code>C(6+9-1, 9)</code>, что упрощается до <code>C(14, 9)</code>.</p>
+
+<p>Расчет производится через факториалы. Число способов равно <code>14! / (9! * 5!)</code>. Это означает, что теоретически существует тысячи вариантов комбинаций, которые можно предложить клиенту, даже имея всего шесть сортов в ассортименте. Такое разнообразие позволяет гибко управлять ценообразованием.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Значение</th>
+<th>Описание в контексте теплицы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n (типы элементов)</td>
+<td>6</td>
+<td>Количество выращиваемых сортов роз</td>
+</tr>
+<tr>
+<td>k (выбираемые элементы)</td>
+<td>9</td>
+<td>Требуемое количество стеблей в букете</td>
+</tr>
+<tr>
+<td>Формула</td>
+<td>C(n+k-1, k)</td>
+<td>Метод расчета комбинаций с повторениями</td>
+</tr>
+<tr>
+<td>Результат</td>
+<td>2002</td>
+<td>Общее количество уникальных букетов</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Итоговое количество уникальных букетов из 9 роз, которые можно составить из 6 сортов при неограниченном запасе, составляет ровно 2002 варианта.</p></aside>
+
+<h2 id="сценарий-с-ограниченным-запасом-сортов">Сценарий с ограниченным запасом сортов</h2>
+
+<p>Реальность тепличного бизнеса часто вносит коррективы в идеальные математические модели. Представьте ситуацию, когда один из шести сортов, например, редкий белый <em>White O'Hara</em>, представлен всего в количестве 3 штук из-за особенностей вегетации. В этом случае расчет <strong>количества способов</strong> усложняется.</p>
+
+<p>Необходимо вычесть из общего числа вариантов те комбинации, где запрещенный сорт встречается 4, 5, 6 и более раз. Для этого используется метод включения-исключения. Мы считаем все варианты, а затем отнимаем"невозможные" сценарии, где мы пытались взять больше цветов, чем есть в наличии.</p>
+
+<p>Такой подход критически важен при составлении коммерческих предложений для оптовых покупателей. Ошибка в расчете доступности может привести к репутационным рискам, если вы пообещаете букет, который физически невозможно собрать из текущей срезки.</p>
+
+<details class="pb-accordion"><summary>Как считать при ограничениях?</summary><div class="pb-accordion-body"><p>Если сорта A всего 3 штуки, мы считаем общее число вариантов, а затем вычитаем варианты, где сорт A встречается 4 и более раз. Для этого мы искусственно"берем" 4 цветка сорта A заранее, а оставшиеся 5 мест в букете (9-4=5) заполняем любыми из 6 сортов по общей формуле.</p></div></details>
+
+<h2 id="влияние-сезонности-на-ассортимент-букетов">Влияние сезонности на ассортимент букетов</h2>
+
+<p>Сезонные колебания напрямую влияют на доступность <strong>6 цветов</strong> в вашей теплице. Зимой, когда световой день короток, некоторые сорта могут замедлять рост или менять качество бутона. Это означает, что в разные месяцы года число доступных комбинаций для букета из 9 роз будет меняться.</p>
+
+<p>Летом, как правило, ассортимент максимально широк, и формула сочетаний с повторениями работает в полную силу. Однако в переходные периоды (весна/осень) может наблюдаться дисбаланс: одни сорта"стреляют" быстро, другие отстают. Планирование посадок должно учитывать эти циклы.</p>
+
+<p>Рекомендуется вести журнал срезки, чтобы точно знать, сколько стеблей каждого сорта доступно ежедневно. Это позволит в реальном времени рассчитывать актуальное количество способов формирования букетов и избегать ситуаций"нет в наличии".</p>
+
+<ul>
+<li>🌹 Зимой сокращайте ассортимент букетов до тех сортов, которые устойчивы к низкой освещенности.</li>
+<li>🌹 Весной увеличивайте долю ранних сортов в расчетах комбинаций.</li>
+<li>🌹 Летом используйте максимальное разнообразие для создания эксклюзивных авторских букетов.</li>
+</ul>
+
+<div class="pb-poll" id="poll-a96b35a7"><div class="pb-poll-question">📊 Какой фактор важнее при составлении букета?</div><div class="pb-poll-option" data-poll="a96b35a7" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Количество стеблей</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a96b35a7" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Сорт роз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a96b35a7" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Свежесть среза</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a96b35a7" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Цена цветка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="практическое-применение-комбинаторики-в-продажах">Практическое применение комбинаторики в продажах</h2>
+
+<p>Знание того, что из 6 сортов можно собрать 2002 варианта букетов, — это мощный маркетинговый инструмент. Вы можете предлагать клиентам услугу"Букет дня", где комбинация выбирается случайным образом или флористом, что создает элемент интриги и уникальности продукта.</p>
+
+<p>Кроме того, это помогает в управлении складом. Если вы видите, что сорт накапливается и не расходуется, вы можете искусственно ограничить варианты букетов, исключив его из популярных комбинаций, или наоборот, сделать его обязательным элементом в акционных предложениях.</p>
+
+<p>Использование программного обеспечения для учета цветов позволяет автоматизировать этот процесс. Система может сама подсказывать флористу, какие комбинации из 9 стеблей наиболее выгодны с точки зрения маржинальности и остатков на складе.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не забывайте, что клиенты часто руководствуются визуальным восприятием, а не математикой. Два букета с одинаковым набором сортов, но разным расположением цветов, могут восприниматься как разные продукты, хотя математически это одна комбинация.</p>
+</blockquote>
+
+<h2 id="ошибки-при-планировании-посадок-в-теплице">Ошибки при планировании посадок в теплице</h2>
+
+<p>Частой ошибкой новичков является неравномерная высадка сортов. Если вы рассчитываете на большое количество комбинаций, но посадили 80% площади под один сорт, а остальные 5 сортов заняли по 4% площади, ваша реальная способность разнообразить букеты будет близка к нулю.</p>
+
+<p>Для обеспечения максимальной вариативности букетов из 9 роз необходимо стремиться к равномерному распределению площадей под 6 основными сортами. Это гарантирует, что в любой момент времени у вас будет достаточный запас каждого компонента для реализации любой из 2002 теоретических схем.</p>
+
+<p>Также стоит учитывать совместимость сортов в срезке. Некоторые розы стоят в вазе 3 дня, другие — 10. Составляя букет, нужно подбирать сорта с примерно одинаковой стойкостью, иначе подарок потеряет вид неравномерно. Это добавляет еще одно условие отбора к нашей математической задаче.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Планирование ассортимента теплицы</h4><label class="check-item"><input type="checkbox"><span>Рассчитать потребность в каждом сорте</span></label><label class="check-item"><input type="checkbox"><span>Проверить совместимость сортов по стойкости</span></label><label class="check-item"><input type="checkbox"><span>Обеспечить равномерную высадку</span></label><label class="check-item"><input type="checkbox"><span>Заложить страховой фонд семян</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Меняется ли ответ, если все розы в букете должны быть разных сортов?</summary>
+<p>Да, кардинально. Если в букете из 9 роз все цветы должны быть разных сортов, а у нас всего 6 сортов, то задача не имеет решения (0 способов). Нельзя выбрать 9 уникальных элементов из множества, содержащего только 6 элементов. Если бы букет был из 6 роз, то был бы всего 1 способ (взять по одному каждого сорта).</p>
+</details>
+
+<details>
+<summary>Как влияет порядок цветов в букете на количество способов?</summary>
+<p>Если порядок имеет значение (например, розы выкладываются в ряд или имеют ярусную структуру), то это уже размещения с повторениями. Формула меняется на <code>n^k</code>, то есть <code>6^9</code>, что дает колоссальное число вариантов (более 10 миллионов). Однако для классического букета порядок обычно не учитывается.</p>
+</details>
+
+<details>
+<summary>Можно ли составить букет, если одного сорта нет в наличии?</summary>
+<p>Да, можно. В этом случае задача сводится к выбору 9 роз из оставшихся 5 сортов. Формула будет <code>C(5+9-1, 9) = C(13, 9)</code>. Количество вариантов уменьшится, но возможность собрать букет сохранится, если остальных сортов достаточно.</p>
+</details>
+
+<details>
+<summary>Зачем цветоводу знать комбинаторику?</summary>
+<p>Это помогает в стратегическом планировании. Понимая потенциал разнообразия продукции, вы можете обоснованно выбирать количество сортов для выращивания, прогнозировать выручку и создавать уникальные торговые предложения, недоступные конкурентам с бедным ассортиментом.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-kabachki-rastut-grushevidnoj-formy-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Почему кабачки растут грушевидной формы в теплице: причины и решение</span>
+                <span class="pb-related-desc">Разбор причин деформации плодов кабачка в теплице. Влияние опыления, температурных скачков и питания</span>
+            </a><a href="/articles/k/ka/kakie-luchshe-sazhat-ogurtsy-v-teplitse-dlya-konservirovaniya.html" class="pb-related-card">
+                <span class="pb-related-title">Лучшие сорта огурцов для теплицы: топовые варианты для консервации</span>
+                <span class="pb-related-desc">Выбираем идеальные гибриды огурцов для засолки в теплице. Обзор пчелоопыляемых сортов, устойчивость </span>
+            </a><a href="/articles/t/ty/tyulpan-teplitsy-kto-prodaet.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить тюльпаны для теплиц: поставщики, оптовики и производители</span>
+                <span class="pb-related-desc">Ищете, кто продает тюльпаны для теплиц? Полный гид по поставщикам, сортам и условиям оптовых закупок</span>
+            </a><a href="/articles/k/ka/kak-zamanit-pchel-v-teplitsu-s-ogurtsami.html" class="pb-related-card">
+                <span class="pb-related-title">Как заманить пчел в теплицу с огурцами: проверенные методы опыления</span>
+                <span class="pb-related-desc">Узнайте, как привлечь пчел и шмелей в теплицу для опыления огурцов. Эффективные приманки, подготовка</span>
+            </a><a href="/articles/k/ka/kak-vyrashchivat-pomidory-sprut-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Выращивание томата Спрут в теплице: полное руководство по гиганту</span>
+                <span class="pb-related-desc">Как вырастить томат Спрут F1 в теплице: секреты формирования, полива и подкормки. Инструкция по уход</span>
+            </a><a href="/articles/k/ko/kogda-nachinayut-pospevat-pomidory-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Когда поспевают помидоры в теплице: сроки, сорта и ускорение</span>
+                <span class="pb-related-desc">Узнайте точные сроки созревания томатов в теплице. Влияние сортов, температурные режимы и секреты ус</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

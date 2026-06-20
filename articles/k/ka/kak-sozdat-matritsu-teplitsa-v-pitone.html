@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как создать матрицу теплицы в Python: управление климатом и датчиками — Теплица Инфо</title>
+    <meta name="description" content="Пошаговая инструкция по созданию матрицы теплицы на Python. Анализ данных с датчиков, моделирование климата и автоматизация полива для умного огорода.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-sozdat-matritsu-teplitsa-v-pitone.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как создать матрицу теплицы в Python: управление климатом и датчиками">
+    <meta property="og:description" content="Пошаговая инструкция по созданию матрицы теплицы на Python. Анализ данных с датчиков, моделирование климата и автоматизация полива для умного огорода.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/postrojka-i-konstruktsiya/">Постройка и конструкция</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как создать матрицу теплицы в Python: управление климатом и датчиками</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-цифровое-земледелие">Введение в цифровое земледелие</a></li><li><a href="#базовая-структура-данных-и-инициализация">Базовая структура данных и инициализация</a></li><li><a href="#заполнение-матрицы-данными-с-сенсоров">Заполнение матрицы данными с сенсоров</a></li><li><a href="#анализ-и-фильтрация-критических-значений">Анализ и фильтрация критических значений</a></li><li><a href="#автоматизация-управления-исполнительными-механизмами">Автоматизация управления исполнительными механизмами</a></li><li><a href="#визуализация-и-прогнозирование-состояния">Визуализация и прогнозирование состояния</a></li><li><a href="#оптимизация-и-работа-с-большими-данными">Оптимизация и работа с большими данными</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-sdelat-teplitsu-samomu-deshevo.html">Как сделать теплицу самому дешево: пошаговый бюджетный гид</a></li><li><a href="/articles/k/ka/kak-ustanovit-polikarbonat-na-teplitsu-kapelka.html">Установка поликарбоната на теплицу Капелька: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-pravilno-sobrat-teplitsy.html">Как правильно собрать теплицу: пошаговая инструкция и советы</a></li><li><a href="/articles/u/uk/ukryvnoj-material-dlya-teplitsy-kakoj-luchshe.html">Какой укрывной материал для теплицы лучше: обзор 2026 года</a></li><li><a href="/articles/k/ka/kak-krepitsya-polikarbonat-na-teplitsu-vnakhlest.html">Как крепить поликарбонат на теплицу внахлест: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Создание матрицы теплицы в Python: от датчиков до управления</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-цифровое-земледелие">Введение в цифровое земледелие</a></li><li><a href="#базовая-структура-данных-и-инициализация">Базовая структура данных и инициализация</a></li><li><a href="#заполнение-матрицы-данными-с-сенсоров">Заполнение матрицы данными с сенсоров</a></li><li><a href="#анализ-и-фильтрация-критических-значений">Анализ и фильтрация критических значений</a></li><li><a href="#автоматизация-управления-исполнительными-механизмами">Автоматизация управления исполнительными механизмами</a></li><li><a href="#визуализация-и-прогнозирование-состояния">Визуализация и прогнозирование состояния</a></li><li><a href="#оптимизация-и-работа-с-большими-данными">Оптимизация и работа с большими данными</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-цифровое-земледелие">Введение в цифровое земледелие</h2>
+<p>Современное садоводство всё чаще опирается на точные данные, а не только на интуицию и календарь. <mark>Матрица теплицы в Python</mark> представляет собой программируемую структуру данных, которая моделирует состояние всех зон вашего тепличного хозяйства в виде двумерного массива. Это позволяет программно обрабатывать показания с множества датчиков температуры, влажности и освещенности, превращая хаотичный поток информации в управляемую систему.</p>
+<p>Использование языка программирования <em>Python</em> для этих целей дает неограниченные возможности благодаря его богатой библиотеке научных вычислений. Вы можете не просто хранить цифры, но и мгновенно анализировать их, выявляя аномалии и принимая решения о включении вентиляции или капельного полива. Такой подход трансформирует обычную теплицу в умный агрокомплекс, способный самостоятельно поддерживать идеальный микроклимат для <strong>томатов</strong>, <strong>огурцов</strong> и других культур.</p>
+
+<h2 id="базовая-структура-данных-и-инициализация">Базовая структура данных и инициализация</h2>
+<p>Первым шагом является создание самой матрицы, которая будет служить цифровым двойником физического пространства. Обычно для этих целей используется библиотека <em>Numpy</em>, так как она обеспечивает высокую скорость вычислений с многомерными массивами. Вам необходимо определить размерность матрицы в зависимости от количества сенсоров и зон контроля внутри конструкции.</p>
+<p>Каждый элемент массива будет отвечать за определенный параметр в конкретной точке теплицы. Например, строки могут представлять собой ряды растений, а столбцы — различные типы показателей: температура, влажность почвы, уровень CO2. Такая структура <code>array</code> позволяет легко выполнять операции над всеми данными сразу, без необходимости писать циклы для каждого датчика отдельно.</p>
+<p>Для начала работы необходимо установить необходимые библиотеки и импортировать их в скрипт. Это фундамент, на котором будет строиться вся логика управления вашей системой.</p>
+<pre><code>import numpy as np
+<p>import pandas as pd</code></pre></p>
+<blockquote>⚠️ Внимание: Перед запуском скрипта обязательно проверьте физическую целостность всех подключенных проводов и датчиков, так как некорректные данные могут привести к ошибочным командам управления оборудованием.</blockquote>
+
+<div class="pb-poll" id="poll-4f4e7917"><div class="pb-poll-question">📊 Какой тип теплицы вы планируете автоматизировать?</div><div class="pb-poll-option" data-poll="4f4e7917" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Каркасная с поликарбонатом</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4f4e7917" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Пленочная арочная</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4f4e7917" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Стеклянная оранжерея</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4f4e7917" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Гидропонная установка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="заполнение-матрицы-данными-с-сенсоров">Заполнение матрицы данными с сенсоров</h2>
+<p>После инициализации пустой матрицы следующим этапом является её наполнение реальными значениями. В реальных условиях эти данные поступают с микроконтроллеров, таких как <em>Arduino</em> или <em>Raspberry Pi</em>, через последовательный порт или сеть. Вы можете симулировать этот процесс для тестового окружения, генерируя случайные значения в пределах допустимых норм для конкретной культуры.</p>
+<p>Ключевая задача здесь — обеспечить корректное отображение данных в нужных ячейках. Если у вас есть <strong>датчики температуры</strong> в трех точках теплицы, они должны занимать фиксированные индексы в строке матрицы, соответствующие этим точкам. Ошибки в индексации могут привести к тому, что система попытается полить воздух или включить обогрев там, где стоит датчик влажности.</p>
+<p>Ниже приведен пример кода, создающего матрицу и заполняющего её тестовыми данными:</p>
+<pre><code># Создание матрицы 3x4 (3 зоны, 4 параметра: темп, влажность, свет, ph)
+<p>data_matrix = np.array([</p>
+<p>[24.5, 65.0, 450, 6.8],  # Зона 1</p>
+<p>[23.8, 70.0, 420, 6.5],  # Зона 2</p>
+<p>[25.1, 60.0, 500, 7.0]   # Зона 3</p>
+<p>])</code></pre></p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка данных с датчиков</h4><label class="check-item"><input type="checkbox"><span>Убедиться в наличии питания на контроллере</span></label><label class="check-item"><input type="checkbox"><span>Проверить соответствие портов в коде</span></label><label class="check-item"><input type="checkbox"><span>Сравнить показания с эталонным термометром</span></label><label class="check-item"><input type="checkbox"><span>Запустить тестовый цикл записи</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="анализ-и-фильтрация-критических-значений">Анализ и фильтрация критических значений</h2>
+<p>Сама по себе матрица не совершает действий, пока вы не научитесь её анализировать. С помощью методов <em>Numpy</em> можно мгновенно найти минимальное, максимальное и среднее значение по всей теплице или по отдельной зоне. Это критически важно для выявления локальных перегревов или зон пересыхания, которые не видны при беглом осмотре.</p>
+<p>Важно настроить пороги срабатывания для каждого параметра. Например, если температура в любой точке матрицы превышает <code>30°C</code>, система должна инициировать запуск вентиляторов. Если влажность почвы падает ниже <code>40%</code>, необходимо открыть клапаны полива. Логика таких проверок реализуется через векторные операции, что делает процесс мгновенным даже при большом массиве данных.</p>
+<p>Рассмотрим таблицу с типовыми пороговыми значениями для основных культур, которые можно зашить в алгоритм проверки:</p>
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Культура</th>
+      <th>Температура (°C)</th>
+      <th>Влажность воздуха (%)</th>
+      <th>Влажность почвы (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Томаты</td>
+      <td>22-26</td>
+      <td>50-70</td>
+      <td>60-75</td>
+    </tr>
+    <tr>
+      <td>Огурцы</td>
+      <td>24-28</td>
+      <td>70-90</td>
+      <td>70-85</td>
+    </tr>
+    <tr>
+      <td>Перцы</td>
+      <td>23-27</td>
+      <td>50-60</td>
+      <td>55-70</td>
+    </tr>
+    <tr>
+      <td>Баклажаны</td>
+      <td>25-28</td>
+      <td>50-65</td>
+      <td>60-75</td>
+    </tr>
+  </tbody>
+</table></div>
+<blockquote>⚠️ Внимание: Значения в таблице носят рекомендательный характер и могут варьироваться в зависимости от конкретного сорта растения и стадии его вегетации.</blockquote>
+
+<details class="pb-accordion"><summary>Особенности обработки данных с датчиков</summary><div class="pb-accordion-body"><p>Датчики часто выдают шум, поэтому полезно использовать алгоритм скользящего среднего, чтобы фильтровать резкие скачки значений, которые не соответствуют реальной физике процесса.</p></div></details>
+
+<h2 id="автоматизация-управления-исполнительными-механизмами">Автоматизация управления исполнительными механизмами</h2>
+<p>После того как анализ матрицы выявил отклонения от нормы, наступает очередь управления. В реальных системах Python-скрипт отправляет команды через интерфейс GPIO или по протоколу MQTT на реле и сервоприводы. Это связующее звено между цифровой моделью и физическим миром.</p>
+<p>Логика должна быть безупречной: нельзя включать одновременно обогрев и охлаждение. Также необходимо учитывать гистерезис, чтобы оборудование не включалось и выключалось слишком часто при граничных значениях. Например, если цель — 25°C, вентилятор должен включаться при 26°C, а выключаться только при 24°C.</p>
+<p>Для реализации такой логики удобно использовать классы, где каждый объект представляет собой отдельное устройство управления. Это позволяет масштабировать систему, добавляя новые устройства без переписывания основного кода.</p>
+<blockquote>⚠️ Внимание: При написании кода управления всегда включайте проверку на наличие устройства перед отправкой команды, чтобы избежать ошибок исключения в runtime.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для отладки логики управления используйте режим эмуляции, где вместо реального включения реле система просто выводит в лог ожидаемые действия, чтобы убедиться в правильности алгоритма.</p></aside>
+
+<h2 id="визуализация-и-прогнозирование-состояния">Визуализация и прогнозирование состояния</h2>
+<p>Человеческому глазу сложно воспринимать сырые массивы чисел, поэтому визуализация данных является неотъемлемой частью системы. С помощью библиотек <em>Matplotlib</em> или <em>Seaborn</em> вы можете строить тепловые карты (heatmaps), на которых цветом будет показана интенсивность параметра в разных зонах теплицы.</p>
+<p>Такой подход позволяет мгновенно увидеть проблемные зоны. Например, если левый угол теплицы на карте отображается красным цветом, это сразу сигнализирует о перегреве, даже если вы не смотрите на конкретные цифры. Это значительно ускоряет принятие решений по корректировке настроек.</p>
+<p>Кроме того, накопленная история данных позволяет строить прогнозы. Анализируя динамику изменения температуры и влажности за последние 24 часа, можно предсказать, когда потребуется полив или проветривание, и подготовить систему заранее.</p>
+
+<h2 id="оптимизация-и-работа-с-большими-данными">Оптимизация и работа с большими данными</h2>
+<p>По мере усложнения системы количество датчиков растет, и матрица становится все больше. Для эффективной работы с большими массивами данных необходимо применять методы оптимизации кода. Использование векторизованных операций вместо циклов <code>for</code> в Python позволяет ускорить обработку в десятки раз.</p>
+<p>Также стоит задуматься о хранении истории. Хранить всю матрицу в оперативной памяти невозможно, поэтому данные необходимо сохранять в базу данных или CSV-файлы. Это позволит вам возвращаться к истории и анализировать эффективность принятых решений в долгосрочной перспективе.</p>
+<p>Важно регулярно проводить калибровку датчиков, так как их показания могут «уплывать» со временем. Встроенный скрипт калибровки может сравнивать показания с эталонным прибором и автоматически корректировать коэффициенты в матрице.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная калибровка и векторизация кода — ключевые факторы стабильной работы системы управления теплицей на базе Python.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+<details>
+  <summary>Какие библиотеки Python необходимы для начала работы?</summary>
+  <p>Для базовой работы достаточно установить <em>Numpy</em> для работы с матрицами, <em>PySerial</em> для связи с микроконтроллерами и <em>Matplotlib</em> для визуализации графиков.</p>
+</details>
+<details>
+  <summary>Можно ли использовать этот метод для больших промышленных теплиц?</summary>
+  <p>Да, принцип масштабирован, но для промышленных объектов рекомендуется использовать архитектуру клиент-сервер и более мощные системы сбора данных, а не простой скрипт на одном компьютере.</p>
+</details>
+<details>
+  <summary>Как защитить систему от ложных срабатываний?</summary>
+  <p>Внедрите алгоритм фильтрации скользящего среднего и задайте гистерезис (разницу между значениями включения и выключения), чтобы оборудование реагировало только на устойчивые отклонения.</p>
+</details>
+<details>
+  <summary>Что делать, если датчик вышел из строя?</summary>
+  <p>Система должна уметь обнаруживать некорректные значения (например, отрицательную влажность) и либо игнорировать их, либо заменять данными с соседних датчиков с пониженным коэффициентом доверия.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-sdelat-teplitsu-samomu-deshevo.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать теплицу самому дешево: пошаговый бюджетный гид</span>
+                <span class="pb-related-desc">Создайте бюджетную теплицу своими руками без лишних затрат. Инструкция по выбору материалов, расчету</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-polikarbonat-na-teplitsu-kapelka.html" class="pb-related-card">
+                <span class="pb-related-title">Установка поликарбоната на теплицу Капелька: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как правильно крепить сотовый поликарбонат на каркас теплицы Капелька. Особенности монтажа, выбор то</span>
+            </a><a href="/articles/k/ka/kak-pravilno-sobrat-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно собрать теплицу: пошаговая инструкция и советы</span>
+                <span class="pb-related-desc">Узнайте, как собрать теплицу своими руками без ошибок. Полный гайд по выбору фундамента, монтажу кар</span>
+            </a><a href="/articles/u/uk/ukryvnoj-material-dlya-teplitsy-kakoj-luchshe.html" class="pb-related-card">
+                <span class="pb-related-title">Какой укрывной материал для теплицы лучше: обзор 2026 года</span>
+                <span class="pb-related-desc">Сравнение спанбонда, агротекса и пленки. Узнайте, какой материал держит тепло и не рвется. Советы по</span>
+            </a><a href="/articles/k/ka/kak-krepitsya-polikarbonat-na-teplitsu-vnakhlest.html" class="pb-related-card">
+                <span class="pb-related-title">Как крепить поликарбонат на теплицу внахлест: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробная технология стыковки сотового поликарбоната внахлест. Обзоры профилей, схемы крепежа и сове</span>
+            </a><a href="/articles/k/ka/kakoj-srok-sluzhby-polikarbonata-na-teplitsakh.html" class="pb-related-card">
+                <span class="pb-related-title">Срок службы поликарбоната на теплицах: реальные цифры и факты</span>
+                <span class="pb-related-desc">Узнайте, сколько реально служит поликарбонат на теплицах. Разбор долговечности сотового материала, в</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

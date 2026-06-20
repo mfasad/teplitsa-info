@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Все разделы — Теплица Инфо</title>
+    <meta name="description" content="Все тематические разделы сайта Теплица Инфо. Удобная навигация по категориям.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/categories.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    <style>
+        .categories-hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 30%, #f8fafc 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 0 40px; text-align: center;
+        }
+        .categories-hero h1 { font-size: 2rem; color: var(--text); margin-bottom: 8px; }
+        .categories-hero p { color: var(--text-secondary); font-size: 1.1rem; }
+        .cat-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px; padding: 40px 0 60px;
+        }
+        .cat-page-card {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 24px; border-radius: 16px;
+            background: var(--card-bg, #fff);
+            border: 1px solid var(--border);
+            text-decoration: none; color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cat-page-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+        .cat-page-icon {
+            font-size: 2.4rem; flex-shrink: 0;
+            width: 56px; height: 56px; display: flex;
+            align-items: center; justify-content: center;
+            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+            border-radius: 14px;
+        }
+        .cat-page-name { font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; }
+        .cat-page-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4; margin-bottom: 6px; }
+        .cat-page-count {
+            font-size: 0.82rem; font-weight: 600;
+            color: var(--primary); background: rgba(37,99,235,0.08);
+            padding: 3px 10px; border-radius: 20px; display: inline-block;
+        }
+        @media (max-width: 640px) {
+            .cat-page-grid { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 40px; }
+            .cat-page-card { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🌱</span>
+                <span>Теплица Инфо</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/bolezni-tomatov/" class="nav-link">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="nav-link">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="nav-link">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="nav-link">❄️ Зимнее выращивание</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/bolezni-tomatov/" class="dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="categories-hero">
+        <div class="container">
+            <h1>📂 Все разделы</h1>
+            <p>Удобная навигация по всем тематическим разделам</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="cat-page-grid">
+            <a href="/category/bolezni-tomatov/" class="cat-page-card">
+            <div class="cat-page-icon">🍅</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Болезни томатов</div>
+                <div class="cat-page-desc">Причины и лечение фитофторы, желтизны, скручивания листьев и других проблем у помидоров в теплице.</div>
+            </div>
+        </a>
+<a href="/category/bolezni-ogurtsov/" class="cat-page-card">
+            <div class="cat-page-icon">🥒</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Болезни огурцов</div>
+                <div class="cat-page-desc">Как бороться с пустоцветом, увяданием, пятнистостью и желтеющими завязями огурцов.</div>
+            </div>
+        </a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="cat-page-card">
+            <div class="cat-page-icon">🍆</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Уход за перцами и баклажанами</div>
+                <div class="cat-page-desc">Секреты выращивания сладкого перца и баклажанов, борьба с пожелтением и загниванием плодов.</div>
+            </div>
+        </a>
+<a href="/category/zimnee-vyrashchivanie/" class="cat-page-card">
+            <div class="cat-page-icon">❄️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Зимнее выращивание</div>
+                <div class="cat-page-desc">Отопление, освещение и технологии выращивания огурцов, томатов и зелени в теплице зимой.</div>
+            </div>
+        </a>
+<a href="/category/posadka-i-udobreniya/" class="cat-page-card">
+            <div class="cat-page-icon">🌿</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Посадка и удобрения</div>
+                <div class="cat-page-desc">Чем подкормить растения, что класть в лунку и как правильно сажать рассаду для высокого урожая.</div>
+            </div>
+        </a>
+<a href="/category/poliv-i-vlazhnost/" class="cat-page-card">
+            <div class="cat-page-icon">💧</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Полив и влажность</div>
+                <div class="cat-page-desc">Режимы полива, капельные системы и нормы влажности для разных культур в теплице.</div>
+            </div>
+        </a>
+<a href="/category/postrojka-i-konstruktsiya/" class="cat-page-card">
+            <div class="cat-page-icon">🔨</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Постройка и конструкция</div>
+                <div class="cat-page-desc">Как построить, собрать и укрепить теплицу из поликарбоната, фундамента и профиля своими руками.</div>
+            </div>
+        </a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="cat-page-card">
+            <div class="cat-page-icon">🧪</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Обработка и дезинфекция</div>
+                <div class="cat-page-desc">Чем обработать теплицу весной и осенью от болезней, вредителей и паутинного клеща.</div>
+            </div>
+        </a>
+<a href="/category/vrediteli-i-zashchita/" class="cat-page-card">
+            <div class="cat-page-icon">🐛</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Вредители и защита</div>
+                <div class="cat-page-desc">Борьба с белокрылкой, тлей, клещом, кротами и другими вредителями в тепличных условиях.</div>
+            </div>
+        </a>
+<a href="/category/formirovanie-kustov/" class="cat-page-card">
+            <div class="cat-page-icon">✂️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Формирование кустов</div>
+                <div class="cat-page-desc">Пасынкование, подвязка и обрезка томатов, огурцов, перцев и арбузов для увеличения урожая.</div>
+            </div>
+        </a>
+<a href="/category/sorta-i-vybor-rastenij/" class="cat-page-card">
+            <div class="cat-page-icon">🌾</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Сорта и выбор растений</div>
+                <div class="cat-page-desc">Обзоры лучших сортов томатов, огурцов и других культур для теплицы и советы по выбору.</div>
+            </div>
+        </a>
+<a href="/category/ekzotika-i-griby/" class="cat-page-card">
+            <div class="cat-page-icon">🍄</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Экзотика и грибы</div>
+                <div class="cat-page-desc">Как вырастить арбузы, дыни, клубнику, спаржу и белые грибы в теплице круглый год.</div>
+            </div>
+        </a>
+<a href="/category/otoplenie-i-klimat/" class="cat-page-card">
+            <div class="cat-page-icon">🔥</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Отопление и климат</div>
+                <div class="cat-page-desc">Способы обогрева теплицы зимой, выбор печей, ИК-обогревателей и экономия энергии.</div>
+            </div>
+        </a>
+<a href="/category/pochva-i-gryadki/" class="cat-page-card">
+            <div class="cat-page-icon">🟫</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Почва и грядки</div>
+                <div class="cat-page-desc">Как подготовить землю, сделать грядки, раскислить почву и использовать сидераты.</div>
+            </div>
+        </a>
+<a href="/category/instrumenty-i-oborudovanie/" class="cat-page-card">
+            <div class="cat-page-icon">🛠️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Инструменты и оборудование</div>
+                <div class="cat-page-desc">Выбор поликарбоната, систем автополива, освещения и вспомогательных материалов для теплицы.</div>
+            </div>
+        </a>
+<a href="/category/sezonnye-raboty/" class="cat-page-card">
+            <div class="cat-page-icon">📅</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Сезонные работы</div>
+                <div class="cat-page-desc">Календарь работ: когда сажать, собирать урожай и готовить теплицу к зиме в разных регионах.</div>
+            </div>
+        </a>
+<a href="/category/peredelka-i-dizajn/" class="cat-page-card">
+            <div class="cat-page-icon">🏡</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Переделка и дизайн</div>
+                <div class="cat-page-desc">Идеи по переделке теплицы в беседку, использование старых рам и внутреннее обустройство.</div>
+            </div>
+        </a>
+<a href="/category/drugoe/" class="cat-page-card">
+            <div class="cat-page-icon">📁</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Другое</div>
+                <div class="cat-page-desc">Разные вопросы о теплицах, сны, бизнес-идеи и нестандартные решения для дачи.</div>
+            </div>
+        </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🌱 Теплица Инфо</div>
+                    <p class="footer-about">Полный справочник по выращиванию овощей в теплице: от выбора конструкции и посадки до борьбы с болезнями и сбора урожая.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a></li>
+<li><a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a></li>
+<li><a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a></li>
+<li><a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a></li>
+<li><a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a></li>
+<li><a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

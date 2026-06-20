@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как работает умная теплица: технологии, датчики и автоматизация — Теплица Инфо</title>
+    <meta name="description" content="Разбираем принцип работы умной теплицы: от датчиков климата до автоматического полива. Полный гид по технологиям для современного огородника.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-rabotaet-umnaya-teplitsa.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает умная теплица: технологии, датчики и автоматизация">
+    <meta property="og:description" content="Разбираем принцип работы умной теплицы: от датчиков климата до автоматического полива. Полный гид по технологиям для современного огородника.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/instrumenty-i-oborudovanie/">Инструменты и оборудование</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает умная теплица: технологии, датчики и автоматизация</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#сердце-системы-контроллеры-и-датчики">Сердце системы: контроллеры и датчики</a></li><li><a href="#автоматизация-климат-контроля-и-вентиляции">Автоматизация климат-контроля и вентиляции</a></li><li><a href="#интеллектуальная-система-полива-и-орошения">Интеллектуальная система полива и орошения</a></li><li><a href="#свет-и-управление-фотопериодом">Свет и управление фотопериодом</a></li><li><a href="#сравнение-традиционной-и-умной-теплицы">Сравнение традиционной и умной теплицы</a></li><li><a href="#сетевые-протоколы-и-интеграция">Сетевые протоколы и интеграция</a></li><li><a href="#обслуживание-и-безопасность-системы">Обслуживание и безопасность системы</a></li><li><a href="#перспективы-развития-технологий">Перспективы развития технологий</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-kupit-plenku-dlya-teplitsy-v-saratove.html">Где купить пленку для теплицы в Саратове: магазины, цены и советы</a></li><li><a href="/articles/k/ka/kak-organizovat-proizvodstvo-teplits.html">Как организовать производство теплиц: бизнес-план и технологии</a></li><li><a href="/articles/k/ka/kak-khranit-melochi-v-teplitse.html">Хранение мелочей в теплице: 10 идей для порядка и экономии места</a></li><li><a href="/articles/k/ka/kakuyu-setku-vybrat-dlya-zateneniya-teplitsy-pomidor.html">Какую сетку выбрать для затенения теплицы помидор: виды и монтаж</a></li><li><a href="/articles/k/ka/kak-vybrat-meteostantsiyu-dlya-teplitsy.html">Как выбрать метеостанцию для теплицы: критерии и советы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает умная теплица: технологии и автоматизация</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#сердце-системы-контроллеры-и-датчики">Сердце системы: контроллеры и датчики</a></li><li><a href="#автоматизация-климат-контроля-и-вентиляции">Автоматизация климат-контроля и вентиляции</a></li><li><a href="#интеллектуальная-система-полива-и-орошения">Интеллектуальная система полива и орошения</a></li><li><a href="#свет-и-управление-фотопериодом">Свет и управление фотопериодом</a></li><li><a href="#сравнение-традиционной-и-умной-теплицы">Сравнение традиционной и умной теплицы</a></li><li><a href="#сетевые-протоколы-и-интеграция">Сетевые протоколы и интеграция</a></li><li><a href="#обслуживание-и-безопасность-системы">Обслуживание и безопасность системы</a></li><li><a href="#перспективы-развития-технологий">Перспективы развития технологий</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современное садоводство переживает настоящую цифровую революцию, превращаясь из тяжелого ручного труда в высокоточное управление биологическими системами. Умная теплица — это не просто пластиковый каркас с датчиком температуры, а сложная экосистема, способная самостоятельно поддерживать идеальные условия для роста растений. Она реагирует на изменения погоды, уровень влажности в почве и освещенность, минимизируя участие человека в рутинных процессах.</p>
+
+<p>Вам больше не придется просыпаться в три часа утра, чтобы открыть форточки перед дождем или поливать грядки в полуденный зной. Все эти задачи берет на себя <strong>автоматизированная система</strong>, объединяющая аппаратное обеспечение и интеллектуальное программное обеспечение. Понимание того, как именно работают эти механизмы, поможет вам выбрать подходящее решение для своего участка и избежать дорогостоящих ошибок при проектировании.</p>
+
+<h2 id="сердце-системы-контроллеры-и-датчики">Сердце системы: контроллеры и датчики</h2>
+
+<p>Фундаментом любой автоматизированной теплицы является <em>контроллер</em> — мини-компьютер, который собирает информацию с датчиков и отдает команды исполнительным устройствам. Именно он принимает решения на основе заложенных алгоритмов, например, включая вентилятор, если температура превысила пороговое значение. Без качественного <strong>центрального процессора</strong> вся автоматизация превратится в набор разрозненных устройств, не способных к взаимодействию.</p>
+
+<p>Сбор данных осуществляется с помощью сети <em>сенсоров</em>, размещенных в критически важных зонах. Они измеряют температуру воздуха, влажность почвы, уровень освещенности, концентрацию углекислого газа и даже кислотность грунта. Эти <strong>параметры среды</strong> передаются в контроллер в режиме реального времени, создавая полную картину микроклимата внутри сооружения. Ошибки в показаниях одного датчика могут привести к неверным решениям системы, поэтому калибровка оборудования играет ключевую роль.</p>
+
+<blockquote>⚠️ Внимание: Показатели влажности почвы могут сильно отличаться в зависимости от глубины залегания корневой системы и типа грунта. Устанавливайте <strong>датчики влажности</strong> на той глубине, где располагаются основные корни ваших культур, а не просто на поверхности.</blockquote>
+
+<h2 id="автоматизация-климат-контроля-и-вентиляции">Автоматизация климат-контроля и вентиляции</h2>
+
+<p>Поддержание оптимального температурного режима — одна из главных задач умной теплицы, особенно в условиях резких перепадов погоды. Система использует <strong>принудительную вентиляцию</strong> и отопительные приборы, чтобы сглаживать пики температуры. Если датчики фиксируют перегрев, контроллер автоматически открывает форточки или включает вытяжные вентиляторы, обеспечивая приток свежего воздуха.</p>
+
+<p>В холодное время года срабатывает механизм обогрева, который может работать от электричества, воды или инфракрасных излучателей. Современные <em>терморегуляторы</em> способны прогнозировать похолодание на основе данных с уличных метеостанций и заранее прогревать помещение. Это позволяет избежать стресса для растений и снизить риск образования конденсата на стенках, который часто провоцирует грибковые заболевания.</p>
+
+<p>Важно отметить, что управление вентиляцией часто происходит по сложным алгоритмам. Например, если влажность слишком высокая, система может открыть окна даже при низкой температуре, чтобы предотвратить гниение, но сделать это на минимальную величину.</p>
+
+<div class="pb-poll" id="poll-4386bbd1"><div class="pb-poll-question">📊 Какой датчик вам кажется самым важным в теплице?</div><div class="pb-poll-option" data-poll="4386bbd1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Температура</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4386bbd1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Влажность почвы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4386bbd1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Освещенность</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4386bbd1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Уровень CO2</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="интеллектуальная-система-полива-и-орошения">Интеллектуальная система полива и орошения</h2>
+
+<p>Полив в умной теплице — это не просто подача воды по расписанию, а точная дозировка жидкости в зависимости от реальных потребностей растений. <strong>Система капельного полива</strong> управляется через электромагнитные клапаны, которые открываются и закрываются строго по команде контроллера. Это предотвращает перерасход воды и исключает вымывание удобрений из почвы.</p>
+
+<p>Сенсоры влажности грунта определяют, когда почва действительно нуждается в увлажнении. Если после дождя влажность выше нормы, полив отменяется автоматически. Также система может учитывать <em>испаряемость</em> воды в зависимости от интенсивности солнечного света: в жаркий день подача воды будет более частой и обильной, чем в пасмурный. Такая адаптивность позволяет растениям получать ровно столько влаги, сколько необходимо для роста.</p>
+
+<p>Некоторые продвинутые модели интегрируют <strong>систему фертигации</strong>, которая смешивает воду с жидкими удобрениями в нужных пропорциях перед подачей в грунт. Это обеспечивает растения полным комплексом питательных веществ без участия человека. Однако для корректной работы системы необходимо регулярно очищать фильтры и проверять работу насосов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка системы полива</h4><label class="check-item"><input type="checkbox"><span>Проверить целостность трубок</span></label><label class="check-item"><input type="checkbox"><span>Очистить фильтры капельницы</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу электроклапанов</span></label><label class="check-item"><input type="checkbox"><span>Настроить график подачи воды</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ Внимание: Засорение капельниц — самая частая проблема при автоматическом поливе. Обязательно установите <strong>фильтры грубой и тонкой очистки</strong> перед подачей воды в систему, особенно если вы используете воду из колодца или пруда.</blockquote>
+
+<h2 id="свет-и-управление-фотопериодом">Свет и управление фотопериодом</h2>
+
+<p>Освещение играет критическую роль в фотосинтезе и развитии растений, а умная теплица может компенсировать недостаток естественного света. <strong>Фитолампы</strong> включаются автоматически при падении уровня освещенности ниже заданного порога или для продления светового дня. Современные LED-системы позволяют менять спектр света в зависимости от стадии роста растения: синий спектр для рассады и красный для цветения.</p>
+
+<p>Система может управлять и внешними экранами или шторами, которые закрываются при слишком ярком солнце, чтобы избежать ожогов листьев. Датчики освещенности <em>фотодатчики</em> передают данные о интенсивности ультрафиолета и видимого спектра. Это позволяет создать идеальный световой режим даже в пасмурные дни или в зимний период.</p>
+
+<p>Управление светом также помогает регулировать режим дня и ночи для растений, что особенно важно для культур, чувствительных к длине дня. Вы можете настроить <strong>автоматическое затенение</strong> в полдень для теплолюбивых культур, которые не переносят прямые палящие лучи.</p>
+
+<h2 id="сравнение-традиционной-и-умной-теплицы">Сравнение традиционной и умной теплицы</h2>
+
+<p>Чтобы наглядно увидеть разницу в эффективности и затратах, сравним обычный парник с автоматизированной системой управления. Умная теплица требует первоначальных вложений, но окупается за счет экономии ресурсов и повышения урожайности. Традиционный подход требует постоянного физического присутствия и мониторинга.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Традиционная теплица</th>
+<th>Умная теплица</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Участие человека</td>
+<td>Ежедневное, ручное</td>
+<td>Периодическое, контроль</td>
+</tr>
+<tr>
+<td>Реакция на погоду</td>
+<td>С задержкой, зависит от владельца</td>
+<td>Мгновенная, автоматическая</td>
+</tr>
+<tr>
+<td>Экономия воды</td>
+<td>Низкая, риск перелива</td>
+<td>Высокая, точная дозировка</td>
+</tr>
+<tr>
+<td>Риск гибели растений</td>
+<td>Высокий при отсутствии присмотра</td>
+<td>Минимальный, защита от сбоев</td>
+</tr>
+<tr>
+<td>Сложность настройки</td>
+<td>Низкая</td>
+<td>Средняя или высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Главное преимущество автоматизации — это возможность удаленного управления. Вы можете проверить состояние теплицы и при необходимости изменить настройки, находясь вдали от дома. <strong>Мобильное приложение</strong> становится вашим пультом управления, показывая все показатели в реальном времени и отправляя уведомления о критических событиях.</p>
+
+<details class="pb-accordion"><summary>Что делать, если отключили электричество?</summary><div class="pb-accordion-body"><p>При отключении электричества умная теплица может перейти в аварийный режим. Многие контроллеры имеют встроенные батарейки или резервные источники питания для работы критических систем вентиляции. Проверьте, поддерживает ли ваша модель <strong>аварийное открытие форточек</strong>.</blockquote></p></div></details>
+
+<h2 id="сетевые-протоколы-и-интеграция">Сетевые протоколы и интеграция</h2>
+
+<p>Современные системы строятся на базе различных протоколов беспроводной связи, таких как Wi-Fi, Zigbee, LoRaWAN или Bluetooth. Выбор протокола зависит от размера теплицы и удаленности датчиков от контроллера. <strong>Беспроводная связь</strong> позволяет легко расширять систему, добавляя новые сенсоры без необходимости прокладки сложных кабельных трасс.</p>
+
+<p>Интеграция с умным домом открывает дополнительные возможности. Например, если система охранной сигнализации фиксирует движение в ночное время, умная теплица может включить свет для отпугивания животных. Данные о климате могут передаваться в облачные сервисы для долгосрочного анализа и прогнозирования урожайности.</p>
+
+<p>Некоторые продвинутые решения используют <em>искусственный интеллект</em> для обучения системы на основе ваших действий. Со временем алгоритм начинает понимать предпочтения конкретных растений и адаптирует параметры под них. Это делает систему по-настоящему индивидуальной и эффективной.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При выборе протокола связи убедитесь, что ваш роутер или шлюз имеет достаточный радиус действия. Стены теплицы из металла или толстого стекла могут экранировать сигнал, поэтому используйте репитеры при необходимости.</p></aside>
+
+<h2 id="обслуживание-и-безопасность-системы">Обслуживание и безопасность системы</h2>
+
+<p>Даже самая совершенная автоматика требует регулярного обслуживания. <strong>Проверка датчиков</strong> должна проводиться не реже одного раза в сезон, так как пыль и грязь могут искажать их показания. Калибровка сенсоров влажности и температуры — обязательная процедура для точной работы системы.</p>
+
+<p>Электронные компоненты должны быть защищены от влаги и перегрева. Используйте <em>класс защиты IP65 или выше</em> для всех уличных устройств и контроллеров. Регулярно проверяйте целостность проводки и соединений, чтобы избежать коротких замыканий.</p>
+
+<p>Важно также иметь план действий на случай сбоя. <strong>Ручное управление</strong> должно быть доступно в любой момент. Большинство профессиональных систем предусматривают возможность ручного дублирования команд или механического открытия форточек при отказе электроники.</p>
+
+<blockquote>⚠️ Внимание: Перед началом сезона обязательно выполните тестовый запуск всех систем: откройте и закройте форточки, включите и выключите полив, проверьте работу отопления. Не надейтесь на то, что система заработает сама по себе.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Умная теплица не заменяет знания агрономии, а служит инструментом для реализации этих знаний с максимальной эффективностью и минимальными затратами времени.</p></aside>
+
+<h2 id="перспективы-развития-технологий">Перспективы развития технологий</h2>
+
+<p>Будущее умных теплиц связано с развитием интернета вещей (IoT) и облачных вычислений. Появляются системы, способные анализировать изображения с камер и определять болезни растений на ранних стадиях по изменению цвета листьев. <strong>Компьютерное зрение</strong> позволит выявлять вредителей до того, как они нанесут серьезный урон урожаю.</p>
+
+<p>Также ожидается интеграция с метеорологическими спутниками, что позволит предсказывать погоду с точностью до часа. Это даст возможность системе заранее готовиться к шторму или заморозкам. <em>Энергонезависимые теплицы</em>, работающие полностью на солнечных батареях, станут стандартом для удаленных участков.</p>
+
+<p>Умная теплица — это инвестиция в комфорт и стабильный результат. Она берет на себя рутину, позволяя вам сосредоточиться на главном — наслаждении процессом выращивания и сборе урожая. <mark>Правильно настроенная система может снизить затраты на воду и электроэнергию до 40% по сравнению с традиционным методом.</mark></p>
+
+<details class="pb-accordion"><summary>Какие растения лучше всего подходят для умной теплицы?</summary><div class="pb-accordion-body"><p>Для автоматизированных систем идеально подходят культуры, чувствительные к перепадам температур и влажности: томаты, огурцы, перцы, баклажаны. Также отлично себя чувствуют экзотические растения и зелень, требующие стабильного микроклимата.</p></div></details>
+
+<details>
+<summary>Нужно ли программировать контроллер самостоятельно?</summary>
+<p>Нет, современные контроллеры часто имеют интуитивные интерфейсы или готовые сценарии («рецепты») для популярных культур. Вам достаточно выбрать тип растения, и система сама настроит параметры климата и полива.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить умную теплицу к умному дому (AliHome, Яндекс)?</summary>
+<p>Да, большинство современных контроллеров поддерживают интеграцию через облачные сервисы или локальные протоколы (MQTT, HomeKit). Это позволяет управлять теплицей голосом и видеть статус на общей панели управления.</p>
+</details>
+
+<details>
+<summary>Что делать, если интернет пропал, а я в отпуске?</summary>
+<p>Контроллер работает автономно на основе заложенных алгоритмов. Отсутствие интернета влияет только на возможность удаленного доступа и просмотра статистики из приложения, но не на работу системы внутри теплицы.</p>
+</details>
+
+<details>
+<summary>Сколько датчиков нужно для стандартной теплицы 3x6 метров?</summary>
+<p>Обычно достаточно одного датчика температуры/влажности воздуха в центре, одного датчика влажности почвы в representative зоне и одного датчика освещенности на крыше. Для больших помещений количество датчиков следует увеличивать.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-kupit-plenku-dlya-teplitsy-v-saratove.html" class="pb-related-card">
+                <span class="pb-related-title">Где купить пленку для теплицы в Саратове: магазины, цены и советы</span>
+                <span class="pb-related-desc">Ищете, где купить надежную пленку для теплицы в Саратове? Полный обзор магазинов, типов материалов, </span>
+            </a><a href="/articles/k/ka/kak-organizovat-proizvodstvo-teplits.html" class="pb-related-card">
+                <span class="pb-related-title">Как организовать производство теплиц: бизнес-план и технологии</span>
+                <span class="pb-related-desc">Пошаговое руководство по запуску цеха теплиц: выбор оборудования, материалов, автоматизация и маркет</span>
+            </a><a href="/articles/k/ka/kak-khranit-melochi-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Хранение мелочей в теплице: 10 идей для порядка и экономии места</span>
+                <span class="pb-related-desc">Узнайте, как эффективно хранить садовый инвентарь, семена и инструменты в теплице. Практичные решени</span>
+            </a><a href="/articles/k/ka/kakuyu-setku-vybrat-dlya-zateneniya-teplitsy-pomidor.html" class="pb-related-card">
+                <span class="pb-related-title">Какую сетку выбрать для затенения теплицы помидор: виды и монтаж</span>
+                <span class="pb-related-desc">Выбор затеняющей сетки для томатов: плотность, цвет, типы крепления. Экспертный разбор материалов дл</span>
+            </a><a href="/articles/k/ka/kak-vybrat-meteostantsiyu-dlya-teplitsy.html" class="pb-related-card">
+                <span class="pb-related-title">Как выбрать метеостанцию для теплицы: критерии и советы</span>
+                <span class="pb-related-desc">Полный гид по выбору метеостанции для теплицы. Обзор сенсоров, точности, моделей и советы по установ</span>
+            </a><a href="/articles/c/ch/chem-srezat-gorchitsu-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Чем срезать горчицу в теплице: инструменты и сроки</span>
+                <span class="pb-related-desc">Как правильно скашивать горчицу в теплице: выбор инструментов, сроки уборки и пошаговая инструкция п</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

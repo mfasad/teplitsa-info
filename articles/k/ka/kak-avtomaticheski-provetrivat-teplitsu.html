@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌱</text></svg>">
+    <title>Как автоматически проветривать теплицу: системы, датчики и алгоритмы — Теплица Инфо</title>
+    <meta name="description" content="Полное руководство по автоматизации проветривания теплицы. Обзор гидравлики, электроприводов и умных контроллеров для стабильного микроклимата.">
+    <link rel="canonical" href="https://teplitsa-info.vercel.app/articles/k/ka/kak-avtomaticheski-provetrivat-teplitsu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как автоматически проветривать теплицу: системы, датчики и алгоритмы">
+    <meta property="og:description" content="Полное руководство по автоматизации проветривания теплицы. Обзор гидравлики, электроприводов и умных контроллеров для стабильного микроклимата.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781914482">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🌱</span>
+                <span class="pb-logo-text">Теплица Инфо</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/bolezni-tomatov/" class="pb-dropdown-item">🍅 Болезни томатов</a>
+<a href="/category/bolezni-ogurtsov/" class="pb-dropdown-item">🥒 Болезни огурцов</a>
+<a href="/category/ukhod-za-pertsami-i-baklazhanami/" class="pb-dropdown-item">🍆 Уход за перцами и баклажанами</a>
+<a href="/category/zimnee-vyrashchivanie/" class="pb-dropdown-item">❄️ Зимнее выращивание</a>
+<a href="/category/posadka-i-udobreniya/" class="pb-dropdown-item">🌿 Посадка и удобрения</a>
+<a href="/category/poliv-i-vlazhnost/" class="pb-dropdown-item">💧 Полив и влажность</a>
+<a href="/category/postrojka-i-konstruktsiya/" class="pb-dropdown-item">🔨 Постройка и конструкция</a>
+<a href="/category/obrabotka-i-dezinfektsiya/" class="pb-dropdown-item">🧪 Обработка и дезинфекция</a>
+<a href="/category/vrediteli-i-zashchita/" class="pb-dropdown-item">🐛 Вредители и защита</a>
+<a href="/category/formirovanie-kustov/" class="pb-dropdown-item">✂️ Формирование кустов</a>
+<a href="/category/sorta-i-vybor-rastenij/" class="pb-dropdown-item">🌾 Сорта и выбор растений</a>
+<a href="/category/ekzotika-i-griby/" class="pb-dropdown-item">🍄 Экзотика и грибы</a>
+<a href="/category/otoplenie-i-klimat/" class="pb-dropdown-item">🔥 Отопление и климат</a>
+<a href="/category/pochva-i-gryadki/" class="pb-dropdown-item">🟫 Почва и грядки</a>
+<a href="/category/instrumenty-i-oborudovanie/" class="pb-dropdown-item">🛠️ Инструменты и оборудование</a>
+<a href="/category/sezonnye-raboty/" class="pb-dropdown-item">📅 Сезонные работы</a>
+<a href="/category/peredelka-i-dizajn/" class="pb-dropdown-item">🏡 Переделка и дизайн</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/otoplenie-i-klimat/">Отопление и климат</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как автоматически проветривать теплицу: системы, датчики и алгоритмы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принципы-работы-и-необходимость-автоматизации">Принципы работы и необходимость автоматизации</a></li><li><a href="#гидравлические-системы-физика-без-электричества">Гидравлические системы: физика без электричества</a></li><li><a href="#электрические-приводы-и-датчики-температуры">Электрические приводы и датчики температуры</a></li><li><a href="#биметаллические-механизмы-и-их-особенности">Биметаллические механизмы и их особенности</a></li><li><a href="#расчет-и-планирование-системы-вентиляции">Расчет и планирование системы вентиляции</a></li><li><a href="#установка-и-настройка-оборудования">Установка и настройка оборудования</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#faq-ответы-на-частые-вопросы">FAQ: Ответы на частые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-obogret-teplitsu-teploventilyatorom.html">Обогрев теплицы тепловентилятором: расчет и монтаж</a></li><li><a href="/articles/p/pr/pri-kakoj-temperature-otkryvayut-teplitsu-s-pomidorami.html">При какой температуре открывать теплицу с помидорами</a></li><li><a href="/articles/r/ra/rasteniya-sgoreli-v-teplitse-chto-delat.html">Растения сгорели в теплице: причины и план спасения</a></li><li><a href="/articles/k/ka/kak-obogrevat-teplitsu-navozom.html">Обогрев теплицы навозом: схемы, температура и виды биотоплива</a></li><li><a href="/articles/n/na/na-ulitse-minus-3-skolko-v-teplitse.html">Температура в теплице при морозе -3: реальный прогноз и риски</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полная автоматизация проветривания теплицы: отSimple-решений до умных систем</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принципы-работы-и-необходимость-автоматизации">Принципы работы и необходимость автоматизации</a></li><li><a href="#гидравлические-системы-физика-без-электричества">Гидравлические системы: физика без электричества</a></li><li><a href="#электрические-приводы-и-датчики-температуры">Электрические приводы и датчики температуры</a></li><li><a href="#биметаллические-механизмы-и-их-особенности">Биметаллические механизмы и их особенности</a></li><li><a href="#расчет-и-планирование-системы-вентиляции">Расчет и планирование системы вентиляции</a></li><li><a href="#установка-и-настройка-оборудования">Установка и настройка оборудования</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#faq-ответы-на-частые-вопросы">FAQ: Ответы на частые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Баланс температуры и влажности внутри защищенного грунта — это фундамент здоровья ваших растений. Ручное открытие фрамуг часто превращается в проблему, когда вы находитесь на даче лишь по выходным, а растения требуют ежедневного ухода. <strong>Автоматическое проветривание</strong> решает эту задачу, поддерживая идеальный климат без вашего постоянного присутствия и риска перегрева посевов.</p>
+
+<p>Современные <strong>системы автопроветривания</strong> работают на основе физических законов или электроники, реагируя на изменения температуры воздуха. Правильно настроенная <strong>автоматика для теплицы</strong> не только спасет урожай от «тепличного эффекта», но и сэкономит вам массу времени и нервов в летний сезон.</p>
+
+<h2 id="принципы-работы-и-необходимость-автоматизации">Принципы работы и необходимость автоматизации</h2>
+
+<p>Главная цель любой системы вентиляции — предотвратить перегрев, который может убить растения за считанные часы. <strong>Тепличный климат</strong> меняется стремительно: солнечный день превращает парник в печь уже к полудню, если не принять меры. Влага скапливается, создавая идеальные условия для грибковых заболеваний, таких как <em>фитофтора</em> или серая гниль.</p>
+
+<p>Ручной режим требует постоянного контроля, что часто невозможно для занятых людей. <strong>Автопроветривание</strong> берет на себя рутину, открывая форточки ровно настолько, чтобы снизить температуру до заданного уровня. Это особенно критично для теплолюбивых культур, таких как томаты и перцы, которые чувствительны к резким перепадам.</p>
+
+<p>Механизмы автоматизации делятся на два основных типа: механические (гидравлические или биметаллические) и электрические. Выбор зависит от бюджета, размера конструкции и желаемого уровня контроля. Важно понимать, что <strong>эффективное проветривание</strong> требует не просто установки устройства, а грамотной интеграции в общую схему теплицы.</p>
+
+<blockquote>⚠️ Внимание! Многие садоводы совершают ошибку, устанавливая один мощный привод на большую теплицу. Это создает лишь локальный сквозняк, не обеспечивая равномерный <strong>обмен воздуха</strong> по всей площади грядок.</blockquote>
+
+<h2 id="гидравлические-системы-физика-без-электричества">Гидравлические системы: физика без электричества</h2>
+
+<p>Гидравлические <strong>автоматы для проветривания</strong> — это классическое и надежное решение, не требующее подключения к электросети. Принцип их работы базируется на тепловом расширении жидкостей или газов. В герметичном цилиндре находится специальная жидкость, которая при нагревании расширяется и выталкивает шток, открывая <em>форточку</em>.</p>
+
+<p>При остывании жидкость сжимается, и пружина возвращает створку в закрытое положение. Такие устройства, например, популярные модели типа «Осьминог» или «Теплица-Авто», полностью автономны. Они идеальны для небольших парников и участков без стационарного <strong>электроснабжения</strong>.</p>
+
+<p>Однако у них есть ограничения: скорость реакции на изменение температуры не мгновенна, а точность регулировки ниже, чем у электронных аналогов. Кроме того, при сильном ветре гидравлика может не справиться с удержанием створки в открытом положении без дополнительных ограничителей.</p>
+
+<div class="pb-poll" id="poll-bf727ace"><div class="pb-poll-question">📊 Как вы проветриваете теплицу?</div><div class="pb-poll-option" data-poll="bf727ace" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Вручную каждое утро</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bf727ace" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Установлен гидравлический автомат</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bf727ace" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Использую электрический привод</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bf727ace" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока думаю об этом</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="электрические-приводы-и-датчики-температуры">Электрические приводы и датчики температуры</h2>
+
+<p>Электрические системы открывают возможности для точного управления микроклиматом. В основе лежит <strong>электропривод</strong>, который подключается к контроллеру и управляется сигналами с датчиков температуры и влажности. Вы можете задать конкретные параметры, например, открывать створку, когда температура превышает <code>25°C</code>.</p>
+
+<p>Такие системы позволяют реализовать сложные сценарии: например, закрывать окна ночью для сохранения тепла или открывать их настежь при достижении критических значений. <strong>Умный дом в теплице</strong> может даже учитывать прогноз погоды, если контроллер подключен к интернету, чтобы не открывать окна перед дождем.</p>
+
+<p>Монтаж электроприводов требует наличия электричества и базовых навыков электромонтажа. Необходимо предусмотреть защиту от влаги (степень защиты <code>IP44</code> и выше) и продумать систему аварийного закрытия при отключении света. Часто используется <em>аккумуляторная</em> система питания для надежности.</p>
+
+<blockquote>⚠️ Внимание! При выборе электропривода обязательно проверяйте его усилие тяги. Для тяжелых поликарбонатных створок большого размера слабый мотор может просто сгореть при первой же попытке открыть окно под нагрузкой.</blockquote>
+
+<h2 id="биметаллические-механизмы-и-их-особенности">Биметаллические механизмы и их особенности</h2>
+
+<p>Биметаллические автоматы работают за счет разного коэффициента теплового расширения двух связанных металлов. При нагревании пластина изгибается и толкает створку. Это очень простые, недорогие и долговечные устройства, не содержащие жидкостей, которые могли бы замерзнуть или вытечь.</p>
+
+<p>Их основное преимущество — абсолютная надежность и отсутствие необходимости в обслуживании. Если <strong>биметаллическая пружина</strong> исправна, она прослужит десятилетиями в любых погодных условиях. Однако их тяговое усилие обычно невелико, поэтому они подходят только для легких фрамуг из пленки или легких профилей.</p>
+
+<p>Настройка высоты открытия у таких устройств часто невозможна или очень ограничена. Вы получаете фиксированный угол открытия, который зависит от температуры, но не можете задать точный порог срабатывания, как в электронных системах.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип системы</th>
+<th>Источник энергии</th>
+<th>Точность управления</th>
+<th>Стоимость</th>
+<th>Сложность монтажа</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Гидравлический автомат</td>
+<td>Тепловая энергия</td>
+<td>Средняя</td>
+<td>Низкая/Средняя</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Биметаллический привод</td>
+<td>Тепловая энергия</td>
+<td>Низкая</td>
+<td>Низкая</td>
+<td>Очень низкая</td>
+</tr>
+<tr>
+<td>Электропривод с контроллером</td>
+<td>Электричество</td>
+<td>Высокая</td>
+<td>Высокая</td>
+<td>Средняя/Высокая</td>
+</tr>
+<tr>
+<td>Комплексная IoT-система</td>
+<td>Электричество/Интернет</td>
+<td>Максимальная</td>
+<td>Очень высокая</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="расчет-и-планирование-системы-вентиляции">Расчет и планирование системы вентиляции</h2>
+
+<p>Прежде чем покупать оборудование, необходимо рассчитать необходимую площадь проветривания. Для полноценного <strong>микроклимата</strong> площадь фрамуг должна составлять минимум 20-25% от площади пола теплицы. Если окон меньше, даже самая умная система не сможет эффективно снизить температуру в жаркий день.</p>
+
+<p>Важно распределить точки проветривания равномерно. Не делайте ставку только на одну торцевую дверь или одно большое окно. Лучшая схема — это <strong>поперечное проветривание</strong> через окна, расположенные на противоположных сторонах или на крыше (зенитные фонари). Это создает тягу и быстро удаляет нагретый воздух.</p>
+
+<p>При планировании учтите направление господствующих ветров. Окна должны располагаться так, чтобы ветер не задувал внутрь под прямым углом, что может повредить растения, а создавал плавный поток. Для больших конструкций часто используют <em>линейные приводы</em> с возможностью синхронного открытия нескольких створок.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед монтажом автоматики</h4><label class="check-item"><input type="checkbox"><span>Измерить площадь всех фрамуг</span></label><label class="check-item"><input type="checkbox"><span>Определить точки крепления</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие электричества</span></label><label class="check-item"><input type="checkbox"><span>Установить защитные ограничители</span></label><label class="check-item"><input type="checkbox"><span>Настроить порог срабатывания</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<blockquote>⚠️ Внимание! Учитывайте, что в сильные ветры автоматические системы могут работать как парус, вырывая створки из креплений. Обязательно устанавливайте механические <strong>ограничители открытия</strong> (цепочки или фиксаторы), чтобы фрамуга не открывалась более чем на 30-40 градусов.</blockquote>
+
+<h2 id="установка-и-настройка-оборудования">Установка и настройка оборудования</h2>
+
+<p>Монтаж гидравлических систем обычно не требует специальных инструментов: достаточно закрепить цилиндр и рычаг в строго вертикальном положении. Следите, чтобы шток <em>поршня</em> не задевал раму и имел свободный ход. Ошибкой является установка под углом, что приводит к заклиниванию механизма.</p>
+
+<p>Для электрических систем важна электрическая схема. Датчик температуры должен быть установлен в тени, на высоте роста растений, и защищен от прямых солнечных лучей. Если датчик будет нагрет солнцем напрямую, он «подумает», что в теплице +50°C, и откроет окна в самый разгар мороза.</p>
+
+<p>Настройка контроллера требует внимательности. Установите <strong>гистерезис</strong> — разницу между температурой открытия и закрытия. Например, открывать при <code>26°C</code>, а закрывать при <code>22°C</code>. Это предотвратит постоянные «качели» открытия-закрытия в течение одной минуты, что сильно изнашивает механизм.</p>
+
+<details class="pb-accordion"><summary>Что такое гистерезис в системе проветривания?
+<p>Гистерезис — это рабочая зона, в которой система не меняет состояние. Если бы система срабатывала при одной и той же температуре (например, 25°C), привод постоянно включался бы и выключался при малейшем колебании на 0.5 градуса. Гистерезис (разница в 3-5 градусов) делает работу системы плавной и экономит ресурс двигателя.--></p>
+
+<!--WIDGET</summary><div class="pb-accordion-body"><p>tip:Проверьте работу системы перед сезоном в мае. Отрегулируйте чувствительность гидравлики так, чтобы она открывалась не в самый пик жары, а заранее, предотвращая перегрев, который растения уже получили.</p></div></details>
+
+<h2 id="типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</h2>
+
+<p>Частой проблемой является заклинивание механизмов из-за грязи и пыли. Пыль, оседающая на цилиндрах и шарнирах, превращается в абразивную пасту. <strong>Регулярное обслуживание</strong> подразумевает очистку и смазку движущихся частей маслом, не содержащим силикона, который может повредить уплотнители.</p>
+
+<p>Вторая ошибка — игнорирование ветра. Автоматика не всегда «понимает», что на улице ураган. Если вы используете электрические приводы, рассмотрите возможность установки датчика ветра, который будет принудительно закрывать все окна при сильном порыве. Это спасет теплицу от разрушения.</p>
+
+<p>Нередко садоводы забывают о сезонной настройке. Летом порог открытия может быть +25°C, а весной, когда растения только закаляются, лучше открывать окна уже при +18°C. Возможность <strong>быстрой перенастройки</strong> параметров — ключевое преимущество электронных систем.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный секрет долгой службы автоматики — это не только качество покупки, но и регулярная смазка, чистка и сезонная корректировка температурных порогов с учетом стадии развития растений.</p></aside>
+
+<h2 id="faq-ответы-на-частые-вопросы">FAQ: Ответы на частые вопросы</h2>
+
+<details>
+<summary>Можно ли сделать автопроветривание своими руками?</summary>
+<p>Да, существуют простые самодельные решения на основе стеклянных банок, меда или воска, которые работают по принципу расширения жидкостей. Однако такие системы менее надежны, чем заводские гидравлические автоматы, и требуют точной настройки пропорций компонентов.</p>
+</details>
+
+<details>
+<summary>Что делать, если отключили электричество в теплице?</summary>
+<p>Электрические приводы обычно имеют встроенную пружину или механизм возврата, который закрывает окна при потере питания. Это защита от перегрева в жару. Однако некоторые модели требуют ручного закрытия, поэтому проверяйте инструкцию к вашему <em>приводу</em> перед покупкой.</p>
+</details>
+
+<details>
+<summary>Как защитить автоматику от зимних холодов?</summary>
+<p>Гидравлические системы с водой могут лопнуть при замерзании. Их необходимо либо демонтировать на зиму, либо заполнять незамерзающей жидкостью (техническим маслом или антифризом). Электрические датчики и контроллеры лучше убирать в помещение или использовать в морозостойком исполнении.</p>
+</details>
+
+<details>
+<summary>Сколько окон нужно для теплицы 6 метров?</summary>
+<p>Для теплицы площадью 6 кв.м общая площадь фрамуг должна быть не менее 1.2–1.5 кв.м. Лучше распределить это на 2–4 окна. <strong>Зенитные окна</strong> на крыше работают эффективнее боковых, так как горячий воздух поднимается вверх.</p>
+</details>
+
+<blockquote>⚠️ Внимание! Технические характеристики приводов и требования к питанию могут меняться в зависимости от производителя и года выпуска модели. Всегда сверяйтесь с актуальной инструкцией в комплекте перед началом монтажа.</blockquote>
+
+<p>Автоматизация проветривания — это инвестиция в стабильность вашего урожая. Неважно, выберете ли вы простой гидравлический автомат или сложную IoT-систему, главное — обеспечить растениям комфортный микроклимат. Правильно подобранное оборудование станет вашим надежным помощником на многие сезоны вперед.</p></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-obogret-teplitsu-teploventilyatorom.html" class="pb-related-card">
+                <span class="pb-related-title">Обогрев теплицы тепловентилятором: расчет и монтаж</span>
+                <span class="pb-related-desc">Эффективный обогрев теплицы тепловентилятором. Расчет мощности, выбор модели, схемы размещения и без</span>
+            </a><a href="/articles/p/pr/pri-kakoj-temperature-otkryvayut-teplitsu-s-pomidorami.html" class="pb-related-card">
+                <span class="pb-related-title">При какой температуре открывать теплицу с помидорами</span>
+                <span class="pb-related-desc">Узнайте оптимальную температуру проветривания теплицы с томатами днем и ночью. Как избежать болезней</span>
+            </a><a href="/articles/r/ra/rasteniya-sgoreli-v-teplitse-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Растения сгорели в теплице: причины и план спасения</span>
+                <span class="pb-related-desc">Что делать, если растения сгорели в теплице от жары? Пошаговая инструкция по реанимации, экстренному</span>
+            </a><a href="/articles/k/ka/kak-obogrevat-teplitsu-navozom.html" class="pb-related-card">
+                <span class="pb-related-title">Обогрев теплицы навозом: схемы, температура и виды биотоплива</span>
+                <span class="pb-related-desc">Как сделать биообогрев теплицы навозом своими руками. Виды биотоплива, схемы укладки, подготовка суб</span>
+            </a><a href="/articles/n/na/na-ulitse-minus-3-skolko-v-teplitse.html" class="pb-related-card">
+                <span class="pb-related-title">Температура в теплице при морозе -3: реальный прогноз и риски</span>
+                <span class="pb-related-desc">Сколько градусов будет в теплице при минус 3 на улице? Разбор влияния материалов, вентиляции и ночно</span>
+            </a><a href="/articles/k/ka/kak-kitajtsy-otaplivayut-teplitsy-v-rossii.html" class="pb-related-card">
+                <span class="pb-related-title">Как китайцы отапливают теплицы в России: технологии и эффективность</span>
+                <span class="pb-related-desc">Обзор китайских систем отопления для теплиц в РФ. Тепловые насосы, инфракрасные обогреватели и адапт</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🌱 Теплица Инфо</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/bolezni-tomatov/">🍅 Болезни томатов</a> · <a href="/category/bolezni-ogurtsov/">🥒 Болезни огурцов</a> · <a href="/category/ukhod-za-pertsami-i-baklazhanami/">🍆 Уход за перцами и баклажанами</a> · <a href="/category/zimnee-vyrashchivanie/">❄️ Зимнее выращивание</a> · <a href="/category/posadka-i-udobreniya/">🌿 Посадка и удобрения</a> · <a href="/category/poliv-i-vlazhnost/">💧 Полив и влажность</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Теплица Инфо. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
